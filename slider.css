@@ -1,6 +1,14 @@
+.slider-next{
+    position: relative;
+    left: 697px; 
+}
+.slider-prev{
+    position: relative;
+    left: 397px; 
+}
 * {
     margin: 0;
-    /* box-sizing: border-box; */
+   
 }
 
 html, body {
