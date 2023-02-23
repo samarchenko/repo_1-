@@ -1,2 +1,2 @@
 # repo_1-
-this is my project, I share the code with everyone!
+repo_1- "this is a repository in which I share code, project, knowledge, skills in the field of programming, IT!"
