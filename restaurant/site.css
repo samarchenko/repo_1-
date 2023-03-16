@@ -121,3 +121,26 @@ body{
 .header-button:hover{
     background-color: #904506;
 }
+.card-holders{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 349px;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    margin-right: 31px;
+    background-color: #fff;
+    margin-top: -60px;
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+}
+.card-title{
+    display: flex;
+    justify-content: center;
+}
+.card-desc{
+    display: flex;
+    justify-content: center;
+}
