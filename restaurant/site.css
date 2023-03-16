@@ -131,16 +131,30 @@ body{
     margin-right: 31px;
     background-color: #fff;
     margin-top: -60px;
+    padding: 0px 10px;
 }
 .card-image{
     display: flex;
     justify-content: center;
+    padding-top: 31px;
 }
 .card-title{
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Tinos', serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+.card-title span{
+    color:rgb(202, 89, 89); 
 }
 .card-desc{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    font-family: 'Tinos', serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #656363;
 }
