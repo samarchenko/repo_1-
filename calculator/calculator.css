@@ -1,0 +1,40 @@
+h1 {
+    color:blueviolet; 
+    font-family: Verdana, fGeneva, Tahoma, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-weight: bold;
+}
+.change-color-for-buttons{
+    background-color: red;
+    display: inline-block;
+    padding: 4px 7px;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.60s;
+    border: 1px;
+}
+.change-color-for-buttons:hover{
+    background-color:blueviolet; 
+    color: #000;
+}
+
+.n1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: weight 700px;
+    color:blueviolet; 
+    font-weight:bold;
+}
+.n2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700px;
+    color:blueviolet; 
+    font-weight:bold;
+}
+.changing-the-color-of-the-result-button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font: weight 700px;
+    color:blueviolet; 
+    font-weight:bold;
+}
