@@ -5,10 +5,10 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: black;
+    background: url(img/background.png); 
   }
   
   canvas {
-    background: #f0f0f0;
+    background:darkgrey; 
     border-radius: 5px;
   }
