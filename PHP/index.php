@@ -32,4 +32,29 @@
     ); 
 
     echo $massif_2['name','surname','age','get through'][0]; 
+
+    $int = 100; 
+    echo 'test: $int<br>'; 
+    echo "test: $int"; 
+    
+    $name = 'Anton'; 
+    $surname = 'Samarhenko'; 
+
+    echo $name; 
+    echo '  '; 
+    echo $surname; 
+
+    echo $name . ' ' . $surname;
+    
+    // + , - , * , /, %.
+    echo 5 + 5; 
+    echo 100 - 30; 
+    echo 5 * 5; 
+    echo 12 / 4; 
+    echo 1081 % 2;
+     
+    $number1 = 100; 
+    $number2 = 200; 
+    echo 'answer: ' . $number1 + $number2; //Конкатенація
+     
 ?>
