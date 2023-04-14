@@ -7,7 +7,7 @@ body{
     margin: 0px 166px;
 }
 .header{
-    background-image: url('bg-im.jpg');
+    background-image: url('img/bg-im.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
