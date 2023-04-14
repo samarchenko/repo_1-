@@ -113,7 +113,51 @@
     }
 
 
-    for($i = 0; $i <= 10; $i++){
+    //for
+    //while
+    //foreach
+
+    for($i = 0; $i <= 10; $i++){  //$i++ == $i = $i + 1; 
         echo 'привіт світ!<br>'; 
     }
+
+    $test = 10; 
+    while($test <= 100){
+        echo 'Тест '.$test.'<br/>';
+        $test++;  
+    }
+
+    $name_ = array(
+        'Anton',
+        'Andrij', 
+        'veronika',
+        'alex', 
+        'Vika',
+    ); 
+    foreach($name_ as $value){
+        echo $value . '<br/>'; 
+    }
+
+    $number_= array(2,3,4,5,); 
+    foreach($number_ as $num){
+        echo 'куб числа' . $number_ . ': ' . ($num * $num) . '<br>'; 
+    }
+
+    //function
+    function myfunction(){
+        echo 'hello world';
+    }
+    myfunction(); 
+
+    function get_bigger($a,$b){
+        if($a > $b){
+            echo $a; 
+        }
+        else{
+            echo $b; 
+        }
+        echo '<br>'; 
+    }
+    get_bigger(10,20); 
+    get_bigger(100,50); 
 ?>
