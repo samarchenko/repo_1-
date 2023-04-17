@@ -131,7 +131,7 @@ body{
     margin-right: 31px;
     background-color: #fff;
     margin-top: -60px;
-    padding: 0px 10px;
+    padding: 10px 10px;
 }
 .card-image{
     display: flex;
@@ -148,7 +148,8 @@ body{
     font-weight: 400;
 }
 .card-title span{
-    color:rgb(202, 89, 89); 
+    color:rgb(202, 89, 89);
+    margin-left: 2px;
 }
 .card-desc{
     text-align: center;
@@ -157,4 +158,66 @@ body{
     font-size: 26px;
     font-weight: 400;
     color: #656363;
+}
+.history{
+    margin-top: 166px;
+}
+.history-title{
+    font-family: 'Tinos', serif;
+    font-size: 54px;
+    font-weight: 400;
+    width: 444px;
+    text-align: center;
+    margin-top: 21px;
+}
+.history-title span{
+    color:rgb(202, 89, 89);
+}
+.history-desc{
+    color:#656363; 
+    font-size: 16px;
+    width: 444px;
+    text-align: center;
+}
+.history-number{
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.number-item{
+    margin-right: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(202, 89, 89);
+}
+.number-item span{
+    display: block;
+    color: #000;
+}
+.history-images{
+    position: relative;
+}
+.history-holder{
+    display: flex;
+    justify-content: space-between;
+}
+.imgages-1{
+    position: absolute;
+    z-index: 0;
+    top: -31px; 
+    left: -448px;
+}
+.imgages-2{
+    position: absolute;
+    z-index: 0;
+    top: -103px; 
+    left: -239px;
+}
+.imgages-3{
+    position: absolute;
+    z-index: 0;
+    top: 202px; 
+    left: -97px;
 }
