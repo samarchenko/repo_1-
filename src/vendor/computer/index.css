@@ -1,0 +1,30 @@
+/*site owner: anton.samarchenko6@gmail.com*/
+table {
+	color:green;
+	border-radius:10px;
+	background-color:black;
+	border-color:red;
+
+    }
+ [href="https://youtu.be/y6WnxA8MPQU"] {
+ 	color:orange;
+ }
+ [href="https://youtu.be/Cu3R5it4cQs"] {
+ 	color:orange;
+ }
+ .Ukraine {
+ 	color:black;
+ }
+ .bold {
+ 	font-weight:bold;
+ }
+ body {
+ 	width:100%;
+ }
+ p {
+ 	font-size:19px;
+ 	font-weight:600;
+ }
+ img {
+ 	width:100%;
+}
