@@ -1,5 +1,5 @@
 <?php
-    echo 'helo world!';
+    echo 'helo world!<br>';
 
     $my_variable = 100;
 
@@ -31,7 +31,7 @@
         'healthy' => true,
     ); 
 
-    echo $massif_2['name','surname','age','get through'][0]; 
+    //echo $massif_2['name','surname','age','get through',][0] 
 
     $int = 100; 
     echo 'test: $int<br>'; 
@@ -60,19 +60,19 @@
     $weather = 'сонце';
 
     if ( $weather == 'сніг'){
-        echo "погода погана,ліпше нікуди не їхати!"
+        echo "погода погана,ліпше нікуди не їхати!";
     }
 
     if ( $weather == 'дождь'){
-        echo "погода погана, дуже мокро ліпше нікуди не їхати!"
+        echo "погода погана, дуже мокро ліпше нікуди не їхати!"; 
     }
 
     if ( $weather == 'сонце'){
-        echo "погода прекрасна,алу жарко!"
+        echo "погода прекрасна,алу жарко!"; 
     }
 
     if ( $weather == 'облачно'){
-        echo "погада класна,але може змінитися!"
+        echo "погада класна,але може змінитися!"; 
     }
 
 
