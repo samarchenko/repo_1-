@@ -439,7 +439,7 @@ body{
 .burger-menu{
     display: none;
 }
-@media (max-width: 1500px){
+@media (max-width: 1200px){
     .galery-content{
         display: block;
     }
@@ -458,7 +458,7 @@ body{
     }
 }
 
-@media(max-width: 1300px){
+@media(max-width: 1225px){
     .menu-items{
         display: block;
     }
@@ -509,7 +509,7 @@ body{
     }
 }
 
-@media(max-width: 1185px){
+@media(max-width: 1179px){
     .burger-menu{
         display: block;
     }
@@ -527,7 +527,7 @@ body{
     }
 }
 
-@media(max-width: 1000px){
+@media(max-width: 1184px){
     .card-holders{
         display: block;
     }
