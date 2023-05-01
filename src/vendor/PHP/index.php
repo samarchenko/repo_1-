@@ -1,163 +1,154 @@
 <?php
-    echo 'helo world!<br>';
+// перша команда на PHP
+ echo "привіт світ<br>";
+ echo "hi bro!<br>";echo('<br>'); 
+//.
 
-    $my_variable = 100;
+//змінна в php позначається --- $
+  $my_variable = 100;
+  echo($my_variable);
+  echo "<hr>";
+  echo $my_variable; echo("<br>"); 
+  echo "<br>"; 
 
-    echo $my_variable;
 
-    $greeting = 'hi bro!';
+  $a = 200; 
+  $b = 50; 
+  echo ($a);
+  echo "<br>"; 
+  echo ($b);
+  echo "<br>";  
+//.
 
-    echo $greeting; 
 
-    $massif = array(
-        "Oleg", //0
-        "Amdrij",//1
-        'Anton', //2
-        'Max', //3
-        'Ivan' //4
-    ); 
+//типи даних в php
+  // integer(int) --- ціле число
+  $q = 25; 
+  echo $q; 
+  echo "<br>"; 
 
-    echo $massif[2]; 
+  //float --- дробове число
+  $t = 15.25; 
+  echo $t; 
+  echo "<br>"; 
+  //string(str) --- рядковий,строковий тип даних
+  $f = 'Anton';
+  echo $f; 
+  echo "<br>"; 
+  //Array --- Масив -- це є тип даних!
+  $e = array(1,2,3,4,5);
+  echo $e; echo "<br>"; 
+  echo $e[4]; echo "<br>";
+  
+  $n = array(
+    "Anton",//0
+    "Oleg",//1
+    "Max",//2
+    "Andrij",//3
+    "Ivan", //4
+    "CJ"//5
+  ); 
+  echo $n[4];
+  echo "<br>"; 
 
-    $massif_2 = array(
-        'name' => "anton", 
-        'surnam' => "Samarchenko", 
-        'age' => 15, 
-        'hobby' => "IT", 
-        'get through' => array(
-            'school in 2023'
-        ),
-        'married' => false,
-        'healthy' => true,
-    ); 
+  $f = array(
+    "name" => "Anton",
+    "surname" => "Samarchenko",
+    "age" => 15,
+    "hoby" => "IT",
+    "date_of_birth" => 2007,
+    "education" => array(  //багато функціональний масив
+        "school in 2025",
+        "university in 2029"
+    )
+  );
+  echo $f["name"]; echo "<br>"; 
+  echo $f["age"]; echo "<br>";
+  echo $f["hoby"]; echo "<br>"; 
+  echo $f["education"][0]; echo "<br>";
+  echo $f["education"][1]; echo "<br>";
 
-    //echo $massif_2['name','surname','age','get through',][0] 
+  //Boolean(bool)(true,false) --- Логічний(правда,помилковий)
+    $Anton = array(
+      "merried" => false,
+      "smoking" => false, 
+      "sport" => true, 
+      "men" => true
+    ); echo('<br>');
+//закінчення,типи даних в PHP.
 
-    $int = 100; 
-    echo 'test: $int<br>'; 
-    echo "test: $int"; 
-    
-    $name = 'Anton'; 
-    $surname = 'Samarhenko'; 
+echo "<hr>"; 
 
+//різниця між --- (" "),(' ')
+  $m = 100; 
+  echo 'test: $m';echo "<br>"; 
+
+  echo "<br>";
+
+  echo "test: $m";
+
+  echo "<hr>"; 
+//кінець!
+
+echo "<br>"; echo "<br>";
+
+echo "<hr>"; 
+
+
+//Конкатенація (об'єднання) рядків в PHP
+  $name = "Anton";
+  $surmane = "Samarchenko"; 
+
+  //можна так писати,але так довго!
+    echo (1); 
     echo $name; 
-    echo '  '; 
-    echo $surname; 
+    echo " "; 
+    echo $surmane; 
+  //.
 
-    echo $name . ' ' . $surname;
-    
-    // + , - , * , /, %.
-    echo 5 + 5; 
-    echo 100 - 30; 
-    echo 5 * 5; 
-    echo 12 / 4; 
-    echo 1081 % 2;
-     
-    $number1 = 100; 
-    $number2 = 200; 
-    echo 'answer: ' . $number1 + $number2; //Конкатенація
+  echo "<br>"; echo "<br>";
 
-    $weather = 'сонце';
+  //Конкатенація))а це є ліпшим варіантом!
+    echo (2); 
+    echo $name . ' ' . $surmane; 
+  //Конкатенація.
+//.
 
-    if ( $weather == 'сніг'){
-        echo "погода погана,ліпше нікуди не їхати!";
-    }
+echo "<hr>";
 
-    if ( $weather == 'дождь'){
-        echo "погода погана, дуже мокро ліпше нікуди не їхати!"; 
-    }
+echo "<br>"; echo "<br>";
 
-    if ( $weather == 'сонце'){
-        echo "погода прекрасна,алу жарко!"; 
-    }
+//математичні операції (+,-,*,/,%)
+  echo 10 + 5; echo "<br>";
+  echo 15 - 4; echo "<br>";
+  echo 5 * 5; echo "<br>";
+  echo 100 / 5; echo "<br>";
+  echo 1080 % 2; echo "<br>"; 
 
-    if ( $weather == 'облачно'){
-        echo "погада класна,але може змінитися!"; 
-    }
+  $v = 50; 
+  $x = 30; 
+  echo 'відповідь: ' . $v + $x; echo "<br>";
+//.
 
+echo "<br>"; 
 
-    $age_2 = 18; 
-    //пропуск в клуб!
-    if($age_2 >= 18 ){
-        echo 'ласкаво просимо'; 
-    }
-    if($age_2 < 18){ 
-        echo 'вам не можна, ви ще замалі!';
-    }
-    
-    
-    //or - або ; and - і ; 
-    $name_2 = 'Anton'; 
-    $age_3 = 15; 
-    if($age_3 < 18 and $name_2 != 'Anton'){
-        echo 'тобі сюди не можна!'; 
-    }
-    else{
-        echo 'Привіт!'; 
-    }
-    
-    $rating = 55; 
-    if($rating >= 25 and $rating <= 75){
-        echo 'ти всигаюча людина!'; 
-    }
-    else{
-        echo 'тобі ще стримитися!'; 
-    }
-
-    $rating_2 = 11; 
-    if($rating_2 >= 25 or $rating <= 75){
-        echo 'ти всигаюча людина!'; 
-    }
-    else{
-        echo 'тобі ще стримитися!'; 
-    }
+//Умова 
+  $weather = "облачно";  //сніг,дождь,соняшно,облачно
+  if ($weather == "сніг"){
+    echo "Погода дуже погана,прохолодна, ліпше нікуди не їхати!";
+  }
+  if ($weather == "дождь"){
+    echo "на вулиці дождь рекомендую бути дома!";
+  }
+  if ($weather == "соняшно"){
+    echo "Погада прекрасна можна виїжати!";
+  }
+  if ($weather == "облачно"){
+    echo "Погода хороша,але візми з собою парасольку!";
+  }
+//.
 
 
-    //for
-    //while
-    //foreach
 
-    for($i = 0; $i <= 10; $i++){  //$i++ == $i = $i + 1; 
-        echo 'привіт світ!<br>'; 
-    }
 
-    $test = 10; 
-    while($test <= 100){
-        echo 'Тест '.$test.'<br/>';
-        $test++;  
-    }
-
-    $name_ = array(
-        'Anton',
-        'Andrij', 
-        'veronika',
-        'alex', 
-        'Vika',
-    ); 
-    foreach($name_ as $value){
-        echo $value . '<br/>'; 
-    }
-
-    $number_= array(2,3,4,5,); 
-    foreach($number_ as $num){
-        echo 'куб числа' . $number_ . ': ' . ($num * $num) . '<br>'; 
-    }
-
-    //function
-    function myfunction(){
-        echo 'hello world';
-    }
-    myfunction(); 
-
-    function get_bigger($a,$b){
-        if($a > $b){
-            echo $a; 
-        }
-        else{
-            echo $b; 
-        }
-        echo '<br>'; 
-    }
-    get_bigger(10,20); 
-    get_bigger(100,50); 
 ?>
