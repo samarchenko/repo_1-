@@ -439,6 +439,26 @@ body{
 .burger-menu{
     display: none;
 }
+
+.block{
+    display: block;
+}
+
+.burger-slide{
+    position: absolute;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.disp{
+    display: none;
+}
+
+
 @media (max-width: 1200px){
     .galery-content{
         display: block;
