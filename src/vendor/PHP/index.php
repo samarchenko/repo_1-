@@ -228,5 +228,55 @@ echo "<br>";echo "<br>";
   } else{
     echo "тобі треба більше старатися!"; 
   }
-//.  
+//.
+
+echo "<br>";echo "<br>";
+
+// Цикли) "for,while,foreach"  ---  "для,поки(тимчасом як),для кожного"
+  
+  for($i = 0; $i <=10; $i++){    //$i++ --- це то саме як ($i = $i + 1)
+    echo "hello world!<br>"; 
+
+  }
+
+  for($p = 1; $p <=10; $p++){
+    echo "$p<br>"; 
+  }
+
+  echo "<br>";echo "<br>";
+
+  $test = 10; 
+  while($test <= 100){
+    echo "Тест:".$test."<br>";
+    $test++; 
+  }
+
+  echo "<br>";echo "<br>"; 
+
+  $name3 = array(
+    "Anton",
+    "Alex",
+    "veronika",
+    "Voltaire",
+    "Oleg",
+    "Vova",
+  );                         //as --- як
+  foreach($name3 as $value){
+    echo $value. "<br>"; 
+  }
+
+  echo "<br>";echo "<br>"; 
+
+  $numbers = array(2,3,4,5,6,7,8,9);
+  foreach($numbers as $num){
+    echo "куб числа " .$num. " : ".($num * $num)."<br>";  
+  } 
+//.
+
+
+
+
+
+
+
 ?>
