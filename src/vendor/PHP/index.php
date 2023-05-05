@@ -274,9 +274,48 @@ echo "<br>";echo "<br>";
 //.
 
 
+echo "<br>";echo "<br>"; echo "<hr>"; 
 
 
+//Функції --- це є просто блок кода,який виконується! 
+  function myfunction(){   //() --- "дужки це є аргументи"
+    echo "Привіт Антон!"; 
+  }
+  myfunction(); // --- так,викликається функція! 
 
 
+  echo "<br>";echo "<br>";
 
+
+  function get_bigger($a,$b){
+    if ($a > $b){
+      echo $a. " a > b"; 
+    } else{
+      echo $b. " a < b"; 
+    }
+  }
+  get_bigger(10,20);
+  echo "<br>"; 
+  get_bigger(30,20);  
+
+
+  echo "<br>"; echo "<br>";echo "<hr>"; 
+
+
+  function get_bigger1($a,$b){   //return --- це повернення коду!
+    if($a > $b){
+      return $a;
+    } else{
+      return $b; 
+    }
+  }
+
+  $bigger = get_bigger1(10,20); 
+  echo $bigger; 
+  
+  echo "<br>";
+
+  $bigger = get_bigger1(30,20); 
+  echo $bigger; 
+//.
 ?>
