@@ -24,6 +24,7 @@ body{
     font-weight: 700;
     font-size: 14px;
     margin-right: 25px;
+    margin-bottom: 5px;
     transition: color 0.3s linear;
 }
 .nav-item:hover{
@@ -454,6 +455,7 @@ body{
 
 .burger-slide{
     position: absolute;
+    margin-top: 10px;
 }
 
 button{
