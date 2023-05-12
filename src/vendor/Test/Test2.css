@@ -5,11 +5,6 @@ h1,h2{
 html{
     background-color: black;
 }
-.button{
-    width: 50px;
-    height: 20px;
-    margin: 5px;
-}
 a{
     color: wheat;
     text-decoration: none;
