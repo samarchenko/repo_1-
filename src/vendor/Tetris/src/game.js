@@ -36,7 +36,7 @@ export default class Game{
     movePieceLeft(){
         this.activePiece.x -= 1;
 
-        if(this.isPieceOtOfBounds()){
+        if(this.hasCollision()){
             this.activePiece.x += 1;  
         }
     }
@@ -44,7 +44,7 @@ export default class Game{
     movePieceRight(){
         this.activePiece.x += 1;  
         
-        if(this.isPieceOtOfBounds()){
+        if(this.hasCollision()){
             this.activePiece.x -= 1;  
         }
     }
@@ -52,16 +52,29 @@ export default class Game{
     movePieceDown(){
         this.activePiece.y += 1;   
 
-        if(this.isPieceOtOfBounds()){
-            this.activePiece.y -= 1;  
+        if(this.hasCollision()){
+            this.activePiece.y -= 1; 
+            this.lockPiece(); 
         }
     }
 
-    isPieceOtOfBounds(){
-        const  playfild = this.playfild
-        const { y, x } = this.activePiece; 
+    hasCollision(){
+        const { y: pieceY, x: pieceX, blocks } = this.activePiece;
 
-        return playfild[y] === undefined || playfild[y][x] === undefined; 
+        for (let y = 0; y < blocks.length; y++) {
+            for (let x = 0; x < blocks[y].length; x++) {
+                if(
+                    blocks[y][x] && 
+                    ((this.playfild[pieceY + y] === undefined || this.playfild[pieceY + y][pieceX + x] === undefined) ||
+                    this.playfild[pieceY +y][pieceX + x])
+                    ){
+                    return true; 
+                }
+                 
+            }
+        }
+
+        return false; 
     }
 
     lockPiece(){
@@ -69,7 +82,9 @@ export default class Game{
 
         for (let y = 0; y < blocks.length; y++) {
             for (let x = 0; x < blocks[y].length; x++) {
-                this.playfild[pieceX + y][pieceX + x] = blocks[y][x]; 
+                if(blocks[y][x]){
+                    this.playfild[pieceX + y][pieceX + x] = blocks[y][x];
+                }
             }
         }
     }
