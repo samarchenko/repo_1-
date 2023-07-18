@@ -6,6 +6,7 @@ export default class Controller {
         this.isPlaying = false;
 
         document.addEventListener ('keydown', this.handleKeyDown.bind(this));
+        document.addEventListener ('keyup', this.handleKeyUp.bind(this));
 
         this.view.renderStarScreen();
     }
@@ -28,11 +29,20 @@ export default class Controller {
         this.updateView();
     }
 
+    reset(){
+        this.game.reset();
+        this.play();
+    }
+
     updateView(){
-        if (!this.isPlaying){
+        const state = this.game.getState();
+
+        if(state.isGameOver){
+            this.view.renderEndScreen(state);
+        } else if (!this.isPlaying){
             this.view.renderPauseScreen();
         } else {
-            this.view.renderMainScreen(this.game.getState());
+            this.view.renderMainScreen();
         }
     }
 
@@ -54,9 +64,13 @@ export default class Controller {
     }
 
     handleKeyDown(event){
+        const state = this.game.getState();
+
         switch (event.keyCode) {
             case 13: //ENTER
-                if(this.isPlaying){
+                if(state.isGameOver){
+                    this.reset();
+                } else if(this.isPlaying){
                     this.pause();
                 } else {
                     this.play()
@@ -64,19 +78,28 @@ export default class Controller {
                 break;
             case 37: //left arrow
                 this.game.movePieceLeft();
-                this.view.renderMainScreen(game.getState());
+                this.updateView();
                 break;
             case 38: //up arrow
                 this.game.rotatePiece();
-                this.view.renderMainScreen(game.getState());
+                this.updateView();
                 break; 
             case 39: //right arrow
                 this.game.movePieceRight();
-                this.view.renderMainScreen(game.getState());
+                this.updateView();
                 break;
             case 40: //down arrow
+                this.stopTimer();
                 this.game.movePieceDown();
-                this.view.renderMainScreen(game.getState());
+                this.updateView();
+                break; 
+        }
+    }
+
+    handleKeyUp(event){
+        switch (event.keyCode) {
+            case 40: //down arrow
+                this.startTimer();
                 break; 
         }
     }
