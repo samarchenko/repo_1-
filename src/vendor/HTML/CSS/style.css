@@ -92,3 +92,32 @@ td{
 .message:hover{  /* :hover --- навести) це Псевдоклас,подійовий селектор (відбувається якась подія,тобто навести)*/
     border: 5px solid #323232;
 }
+
+#test2{ /* scale --- масштаб,розмір,міра */
+    transform: scale(1.5); /* transform --- трансформувати,змінювати,перемінити) rotate --- обертати) Degree"deg" --- Градус */
+    transition: 1s transform; /* transition --- перехід */
+
+    background-color: green;
+    color: #fff;
+    padding:15px; 
+    margin:15px;
+    border: 3px solid black;
+    border-radius: 30px;  /* border-radius --- радіус кордону,закруглення кути кордону */
+    opacity: 0.9; /* opacity --- непрозорість,туманність,прозрачність */
+    box-shadow: 10px 10px 10px black;  /* box-shadow: 1)по осі x (10px) 2)по осі y (10px) 3)розмиття тіні (10px) 4)колір (black) --- ящик-тінь */
+    width: 5%; /* width --- ширина)може бути в "px,%" */
+    height: 20px;  /* height --- висота)може бути в "px,%" */
+    display: block; /* display --- дисплей,чи видемий блок чі ні */ /* block --- блокувати, none --- немає */
+    text-align: center;  /* text-aling --- вирівнювання тексту */
+    font-size: 20px; /* font-size --- розмір шрифту */
+    font-weight: 900; /* font-weight --- вага шрифту,жирність шрифта */
+}
+
+#test2:hover{
+    transform: rotate(45deg) scale(1.5); /* rotate --- обертати */
+    background-color: red;
+}
+
+body{  /* background-image --- фонове зображення */
+    /*background-image: url(https://i.pinimg.com/736x/bf/39/fa/bf39fa3b861b7a96bd6107fae65b28ee.jpg);*/
+}
