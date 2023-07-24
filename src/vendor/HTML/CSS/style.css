@@ -60,3 +60,35 @@ td{
     font-size: 8px;
     color: burlywood;
 }
+
+.message{
+    color: black;
+    background-color: #e4e4e4;  /* background-color(Властивість) --- Колір фону */
+    border: 1px solid #323232;  /* border: розмір(1px) стиль(solid -- твердий) колір(#323232)--- кордон */
+    font-size: 20px;  /* font-size --- розмір шрифту */
+    margin: 10px;  /* margin --- запас) зовнішні відступи */
+    padding: 5px;  /* padding --- оббивка) внутрішній відступ */
+}
+
+.succes{
+    background-color: #19a15f;
+}
+
+.fail{
+    background-color: #d65144;
+    color: #000000;
+}
+
+.info{
+    background-color: blue;
+    color:#000000;
+}
+
+.warning{
+    background-color: yellow;
+    color: #000000;
+}
+
+.message:hover{  /* :hover --- навести) це Псевдоклас,подійовий селектор (відбувається якась подія,тобто навести)*/
+    border: 5px solid #323232;
+}
