@@ -26,10 +26,44 @@
     <a href="https://github.com/samarchenko/repo_1-">Привіт!мене звати Антон</a> <!-- Атрибут href визначає URL-адресу сторінки на яку вказує посилання. 
         Оскільки в якості адреси посилання може використовуватися документ будь-якого типу, 
         то результат переходу за посиланням залежить від кінцевого файлу. --><br>
+    
+    <!-- Формування тексту -->
     привіт <b>світ!</b> <!-- Тег <b> визначає жирне накреслення тексту на сторінці. --> <br>
     <i>привіт</i> світ! <!-- </i> визначає, що між тегами розташований текст, який має відтворюватися у браузері курсивом. --><br>
     привіт <sub>людство</sub> H<sub>2</sub>O  <sub> <!-- тег <sub> відображає текст у вигляді нижнього індексу (Підрядковий текст). Підрядковий текст може бути використаний для хімічних формул, як H2O. Текст при цьому розташовується нижче базової лінії рядка і у зменшеному розміру.--> <br>
     C<sup>2</sup>= a<sup>2</sup>+b<sup>2</sup> <!-- Тег <sup> визначає текст з верхнім індексом -->
+    <hr>
+    <br>
+
+    <!-- HTML форми -->
+    <form>
+        <label for="name">name</label> <!-- for --- для --> <!-- label --- етикетка -->
+        <input id="name" type="text" placeholder="name"><!-- placeholder --- заповнювач --> <!-- type --- типу,модель,типовий -->
+        <br> <br>
+        <label for="e-mail">email</label>
+        <input type="email" placeholder="e-mail" id="e-mail">
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" placeholder="password" id="password">
+        <br><br>
+        <label for="age-old">18+</label>
+        <input name="age" id="age-old" type="radio"> <!-- Атрибут name задає унікальне ім'я елементу <input> -->
+        <label for="age-younger"> менше 18</label>
+        <input name="age" id="age-younger" type="radio">
+        <br><br>
+
+        <select name="" id=""> <!-- select --- вибрати --> <!-- Тег select у HTML використовується для створення випадного списку, щоб користувачі могли обрати бажаний варіант. -->
+            <option value="BMW">BMW</option> <!-- option --- варіант --> <!-- value --- значення -->
+            <option value="Audi">Audi</option>
+            <option value="Mercedes-Benz">Mercedes-Benz</option>
+        </select>
+        <br><br>
+        <textarea>hello</textarea> <!-- textarea --- текстове поле -->
+        <br><br>
+        <input type="submit" value="submit"> <!-- submit --- подати -->
+        <br>
+        <button>submit</button> <!-- button --- кнопку -->
+    </form>
 </body>           
 </html>
 
