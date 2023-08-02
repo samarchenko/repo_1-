@@ -16,6 +16,7 @@ h3{
 
 *{ /* (*) селектор який задає певні стилі для всіх елементів сайту   */
     color: darkslateblue;
+    font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif; /* font-family --- сімейство шрифтів) це фластивість яка змінює шрифт */
 }
 
@@ -69,4 +70,16 @@ h3{
 
 p[id="w-2"]{ /* звертаємося до параграфа який має id і назву id */
     color: darkkhaki;
+}
+
+.top{
+    width: 500px; /* width --- ширина */
+}
+
+.top p{
+    width: 50px;
+}
+
+a{
+    width: 100px;
 }
