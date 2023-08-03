@@ -98,6 +98,10 @@ inline-block. Це значення створює блоковий елемен
     display: none; /* none --- немає */ /* контент просто зникає. */
 }
 
+
+/* Від visibility він відрізняється тим, 
+що невидимий (visibility="hidden") шар продовжує займати місце,
+а невідображається (display="none") місця не займає, ніби його просто нема. */
 .main-4{
-    visibility: hidden; /* visibility(видимість): hidden(прихований);s */
+    visibility: hidden; /* visibility(видимість): hidden(прихований); */ 
 }
