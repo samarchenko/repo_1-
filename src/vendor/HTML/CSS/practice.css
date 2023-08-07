@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    margin: 0;
+    list-style-type: none; /* список-стилів-тип:немає */
+}
+
+a{
+    text-decoration: none; /* текст-оздоблення:немає */
+    color: inherit; /* inherit --- успадкувати,наслідити */
+}
+
+.header{
+    height: 50px;
+    line-height: 50px; /* висота-лінії,рядка */
+    background-color: black;
+}
+
+.nav-list li{
+    display: inline-block;
+    color: white;
+    font-weight: bold; /* вага,жирність-шрифту:жирний */
+    font-size: 14px; /* розмір-шрифту:14px */
+}
