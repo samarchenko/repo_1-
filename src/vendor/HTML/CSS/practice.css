@@ -42,7 +42,21 @@ a{
   hover --- навести
 */
 
-.nav-list li:last-child{ /* last-child --- остання-дитина,елемент */
-    color: red;
+.nav-list li:last-of-type a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    background-color: #dd3d53;
+    border-radius: 3px;
+    transition: all .25s ease; /* transition --- перехід; ease --- легкість,вільність; all --- все */
+}
+
+.nav-list li:last-of-type a:hover{
+    background-color: #c9233a;
+}
+
+.nav-list li:last-of-type a svg{ 
+    width: 1em;
 }
 
