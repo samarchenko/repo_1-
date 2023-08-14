@@ -137,3 +137,143 @@ h1{ /* 5 місце по тріорітетності */
 .verse-text p{
     color: black;
 }
+
+
+
+
+.perent-child{
+    display: flex;
+    padding: 5px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+.child{
+    width: 100px;
+    flex-grow: 1; /* flex-grow --- гнучкий-ріст */
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+/* 
+CSS властивість flex-grow визначає коефіціент збільшення гнучкого елемента,
+по відношенню до інших гнучких елементів, всередині того ж контейнера, 
+якщо всередині нього залишається вільний простір.
+*/
+
+/* first-of-type --- перший-з-типу або першого типу */
+.child:first-of-type{ /* Опис CSS псевдоклас :first-of-type знаходить першого нащадка свого типу серед дітей батька */
+    background-color: red;
+}
+
+.child:nth-of-type(2){ /* CSS псевдоклас :nth-of-type() знаходить один або більше елементів із заданим тегом, ґрунтуючись на їх позиції серед групи сусідніх елементів */
+    background-color: blue;
+}
+
+/* last-of-type --- останній-з-типу або останнього типу */
+.child:last-of-type{ /* CSS псевдоклас :last-of-type знаходить останнього нащадка із заданим тегом у списку дітей батьківського елемента. */
+    background-color: green;
+}
+
+
+
+
+
+.perent-child-2{
+    display: flex;
+    padding: 5px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+.child-2{
+    width: 200px;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+
+/* Властивість flex-shrink встановлює коефіцієнт стиснення гнучких елементів в контейнері 
+по відношенню до інших гнучких елементів в тому ж контейнері, якщо в ньому залишається вільний простір. 
+Гнучкі елементи автоматично зменшують свою ширину, якщо вона більша за ширину батьківського елементу. */
+
+.child-2:first-of-type{
+    background-color: yellow;
+    flex-shrink: 1; /* гнучке-скорочування  */
+}
+
+.child-2:nth-of-type(2){
+    background-color: black;
+    flex-shrink: 4; /* гнучке-скорочування */
+}
+
+.child-2:last-of-type{
+    background-color: orange;
+    flex-shrink: 9; /* гнучке-скорочування */
+}
+
+
+
+.perent-child-3{
+    display: flex;
+    flex-wrap: wrap; /* flex-wrap: wrap ---- гнучко-загорнути:загорнути,обгортка,загортати */ /* завжди пишеться в батьківському едементі. */
+    padding: 5px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+/* Властивість flex-wrap визначає, чи елементи мають розташовутися 
+примусово на одному рядку або можуть бути перенесені на наступний рядок. */
+
+.child-3{
+    width: 200px;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+.child-3:first-of-type{
+    background-color: purple;
+}
+
+.child-3:nth-of-type(2){
+    background-color: pink;
+}
+
+.child-3:last-of-type{
+    background-color: gray;
+}
+
+.block{
+    display: flex;
+    padding: 5px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+.block-paragraph{
+    width: 100px;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+
+/* CSS властивість order визначає порядок, що використовується для розміщення flex елементів у їх flex контейнері. */
+
+.block-paragraph:first-of-type{
+    background-color: aqua;
+    order: 3; /* order --- порядок,упорядковування*/
+}
+
+.block-paragraph:nth-of-type(2){
+    background-color: lime;
+    order: 1; /* order --- порядок */
+}
+
+.block-paragraph:last-of-type{
+    background-color:cornflowerblue;
+    order: 2; /* order --- порядок */
+}
