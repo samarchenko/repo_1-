@@ -14,13 +14,29 @@ a{
 }
 
 .header{
+    display: flex;
+    align-items: center;
     height: 50px;
-    line-height: 50px; /* висота-лінії,рядка */
+    /*line-height: 50px;*/ /* висота-лінії,рядка */
     background-color: black;
 }
 
+.logo-link{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.logo-img{
+    height: 40px;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
 .nav-list li{
-    display: inline-block;
     padding: 0 10px;
     color: white;
     font-weight: bold; /* вага,жирність-шрифту:жирний */
@@ -44,13 +60,18 @@ a{
 */
 
 .nav-list li:last-of-type a{
-    display: block;
+    display: flex; /* дисплей: гнучкий */
+    align-items: center; /* вирівнювання-елемента:центер(перпендикулярно) */
     height: 30px;
-    line-height: 30px;
+    /*line-height: 30px;*/ /* висота-лінії */
     padding: 0 10px;
     background-color: #dd3d53;
     border-radius: 3px;
     transition: all .25s ease; /* transition --- перехід; ease --- легкість,вільність; all --- все */
+}
+
+.love-img{
+    margin-right: 5px;
 }
 
 .nav-list li:last-of-type a:hover{
@@ -64,3 +85,5 @@ a{
 /* <!-- Переклад з англійської-У веб-розробці модель коробки CSS стосується того, 
 як елементи HTML моделюються в механізмах браузера та як розміри цих елементів HTML 
 виводяться з властивостей CSS. Це фундаментальна концепція композиції веб-сторінок HTML. --> */
+
+
