@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    font-family: 'Barriecito', cursive;
+}
+
+.perent{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* align-items: center,start,end --- вирівнювання-елементів:центер,початок,кінец */
+    padding: 5px;
+    border: 1px solid black;
+}
+
+
+
+/* Властивість align-items вирівнює елементи всередині рядків 
+гумового контейнера в перпендикулярному (вертикальному) напрямку. */
+
+
+.child{
+    width: 100px;
+    padding: 10px;
+    margin: 0;
+    color: white;
+}
+
+.child:first-of-type{
+    background-color: greenyellow;
+}
+
+.child:nth-of-type(2){
+    background-color: slateblue;
+}
+
+.child:last-of-type{
+    background-color: violet;
+}
