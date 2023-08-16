@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: 'Barriecito', cursive;
+    background-color: forestgreen;
 }
 
 .perent{
@@ -34,4 +35,91 @@ body{
 
 .child:last-of-type{
     background-color: violet;
+}
+
+
+
+
+
+
+
+
+/* CSS flexbox — це CSS3 веб модуль. Flex дозволяє автоматично організовувати відповідні 
+елементи в контейнері залежно від розміру екрана та дає змогу використовувати більш 
+ефективний спосіб верстки, вирівнювання й розподілу вільного місця між елементами у контейнері, 
+навіть коли їх розмір невідомий і/або динамічний. */
+
+
+
+
+
+
+
+
+.perent-2{
+    padding: 10px 0;
+    margin-top: 50px;
+    background-color: indigo;
+    font-size: 36px;
+    color: white;
+}
+
+.child-new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 400px;
+    font-size: 36px;
+    color: white;        
+}
+
+.child-1{
+    background-color: red;
+    position: static; /* position: static --- положення: статичне */
+}
+/* коли ми вказуємо положенння(position) ми можемо використовувати такі властивості - "top,bottom",right,left,z-index */
+/* static - статичний,стандартний --- положення(position) стандартне(static) має всі елементи за умовчанням */
+/* Властивість position визначає тип позиціювання 
+відносно вікна браузера або інших елементів: static , relative , 
+absolute , fixed або sticky (статичний, відносний, абсолютний, фіксований або клейкий). */
+
+
+.child-2{
+    background-color: blue;
+    position: relative; /* position:reletive --- положення:відносне,умовний */
+    top: 20px; /* top --- зверху */
+}
+/* relative - відносне позиціонування елемента. В даному випадку елемент, як завжди, 
+розміщується щодо свого поточного положення в потоці документа, тобто візуальних змін не видно. */
+
+
+.child-3{
+    background-color: green;
+    position: absolute; /* position: absolute --- позиція: абсолютна */
+    z-index: 2;
+    left: 40px;
+}
+/* Властивість z-index визначає порядок стека елемента. 
+Іншими словами, Ви можете розмістити елемент на сторінці вище іншого елементу або перед ним. */
+/* z-index --- буде задіяний тобі коли як position буде не static що в 1 елемента і 2 елемента */
+
+/* absolute - Абсолютне позиціонування робить дві речі: Елемент зникає з того місця, 
+де він має бути і знову позиціонується. Інші елементи розташовуються так, 
+ніби цього елемента ніколи не було */
+
+
+.child-4{
+    background-color: black;
+    position: relative;
+    z-index: 3;
+}
+
+.child-5{
+    background-color: yellow;
+}
+
+.child-6{
+    background-color: blueviolet;
 }
