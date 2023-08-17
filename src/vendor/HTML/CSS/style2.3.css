@@ -57,6 +57,7 @@ body{
 
 
 .perent-2{
+    height: 2000px;
     padding: 10px 0;
     margin-top: 50px;
     background-color: indigo;
@@ -118,8 +119,36 @@ absolute , fixed або sticky (статичний, відносний, абсо
 
 .child-5{
     background-color: yellow;
+    position: fixed; /* position: fixed --- позиція:фіксований; */
+    right: 0;
 }
+
+
+/* Fixed Position у CSS
+Це значення зафіксує положення вашого елемента на екрані навіть під час прокручування(мишкою,тачпадом) у браузері. */
+
+
 
 .child-6{
     background-color: blueviolet;
+    position: sticky; /* position: sticky --- позиція:липкий,клейкий */
+    top: 0;
+}
+
+/* sticky --- такий сами як і fixed він залищається як статичний елемент а 
+коли починаємо рухати мишкою,тачпадом він стає як fixed  */
+
+/* "Липкий" елемент - це елемент, якому ми задали position: sticky. 
+Елемент стане плаваючим, як тільки область видимості досягне певної позиції, 
+наприклад top: 0px . */
+
+
+
+.child-7{
+    background-color: greenyellow;
+}
+
+.child-8{
+    background-color: white;
+    color: black;
 }
