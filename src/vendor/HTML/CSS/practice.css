@@ -16,7 +16,9 @@ a{
 .header{
     display: flex;
     align-items: center;
+    justify-content: space-between; /*  */
     height: 50px;
+    padding: 0 20px;
     /*line-height: 50px;*/ /* висота-лінії,рядка */
     background-color: black;
 }
@@ -43,8 +45,13 @@ a{
     font-size: 14px; /* розмір-шрифту:14px */
 }
 
+.nav-list li:last-of-type{
+    padding-right: 0;
+}
+
 .nav-list-link{
     position: relative; /* положення:відносний */
+    transition: all .25s ease;
 }
 
 .nav-list-link::after{  /* ::after --- після */
@@ -55,8 +62,16 @@ a{
     position: absolute;
     bottom: -8px;
     left: 0;
-    /*transform: scaleX(0);*/
+    transform: scaleX(0);
     transition: all .25s ease;
+}
+
+.nav-list-link:hover{
+    color: #17baaa;
+}
+
+.nav-list-link:hover::after{
+    transform: scaleX(1);
 }
 
 /* ::after створює псевдоелемент, що є останнім нащадком вибраного елемента. 
