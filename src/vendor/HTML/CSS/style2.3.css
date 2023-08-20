@@ -231,3 +231,97 @@ absolute , fixed або sticky (статичний, відносний, абсо
     margin: 0px 0px 0px 10px;
     display: inline-block;
 }
+
+
+
+
+
+
+.test-tranform{
+    display: flex; /* дисплей:гнучкий */
+    justify-content: center; /* виправдовувати-вміст:центер */
+    align-items: center; /* вирівняти-елементи */
+    width: 150px;
+    height: 150px;
+    margin: 50px 0px 0px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    transition: all 1s ease; /* перехід:все,всі 1сек легкість */
+}
+
+/* transition --- CSS властивість transition встановлює ефект переходу між двома станами елемента. 
+Використовується з псевдокласом :hover або :active або 
+якщо стан елементу був динамічно змінений за допомогою JavaScript. */
+
+
+/* transform --- CSS-властивість transform дозволяє повертати, масштабувати, 
+нахиляти або зрушувати елемент. Воно модифікує 
+координатний простір для CSS візуальної моделі, що форматується. */
+
+.transform-origin{
+    background-color: pink;
+}
+
+.transform-origin:hover{
+    transform: rotate(90deg);
+    transform-origin: bottom right; /* трансформувати:походження,початок координат,рід,настання: знизу вправо,праворуч внизу */
+    background-color: violet;
+}
+
+/* rotate() — поворот об'єкта щодо його лівого верхнього кута */
+
+
+
+.test-rotate{
+    background-color: black;
+}
+
+.test-rotate:hover{
+    transform: rotate(90deg); /* трансформувати:обертати(90 градусів) */
+    background-color: white;
+    color: black;
+}
+
+.test-scale{
+    background-color: aqua
+}
+
+.test-scale:hover{
+    transform: scale(0.5); /* трансформувати: масштаб(0.5) */
+    background-color:limegreen
+}
+
+/* scale. Масштаб елемента по горизонталі та вертикалі. transform: scale(sx[, sy]); 
+Значення більше 1 збільшує масштаб елемента, менше 1 зменшує масштаб. */
+
+
+
+.test-translate{
+    background-color: red;
+}
+
+.test-translate:hover{
+    transform: translate(100px, 0); /* трансформувати: перекладати(по осі "x", по осі "y" ) */
+    background-color: blue;
+}
+
+/* translate() , за допомогою якої можна перемістити елемент з початкової точки. 
+Функція приймає два параметри один для переміщення по осі X, другий по осі Y. 
+Можна вказувати числові значення в будь-яких одиницях вимірювання довжини в CSS. */
+
+
+
+.test-skew{
+    background-color: purple;
+}
+
+.test-skew:hover{
+    transform: skew(30deg); /* трансформувати: перекіс,косий,перекошений,асиметричний(30 градусів) */
+    background-color: yellow;
+}
+
+/* Функція skew() задається одним або двома значеннями, 
+які відображають нахил у кожному з напрямків. */
+
+
+
