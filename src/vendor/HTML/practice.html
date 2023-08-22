@@ -10,41 +10,78 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo-container">
-            <a class="logo-link" href="#">
-                <img class="logo-img" src="	https://opencages.com.ua/_nuxt/img/logo-light.9a60eb5.svg" alt="logo">
-            </a>
-        </div>
-        <ul class="nav-list">
-            <li>
-                <a class="nav-list-link" href="#">Про нас</a>
-            </li>
-            <li>
-                <a class="nav-list-link" href="#">Блог</a>
-            </li>
-            <li>
-                <a class="nav-list-link" href="#">Кампанії</a>
-            </li>
-            <li>
-                <a class="nav-list-link" href="#">Підтримати організацію</a>
-            </li>
-            <li>
-                <a class="nav-list-link" href="#">Книги</a>
-            </li>
-            <li>
-                <a class="nav-list-link" href="#">Для медіа</a>
-            </li>
-            <li>
-                <a class="nav-list-link" href="#">Контакти</a>
-            </li>
-            <li>
-                <a href="#"> 
-                    <svg class="love-img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fs-s mr-10 svg-inline--fa fa-heart fa-w-16 heart" data-v-4180a957=""><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" data-v-4180a957="" class=""></path></svg>
-                    Підтримати
+    <!-- Семантичні теги вони потрібні для:
+      1)для більшого розуміння коду html(для розробників)
+      2)для Search Engine Optimization(SEO) --- Пошукова оптимізація.
+      Абревіатура розшифровується як Search Engine Optimization. Простими словами, 
+      SEO – це комплекс дій щодо внутрішньої та зовнішньої оптимізації, 
+      спрямованих на підвищення позицій сайту в пошуковій видачі.
+      3)для веб доступності(допомагають незрячим людям,глухим ліпше використовувати сайт)
+    -->
+
+    <!-- main --- головний,основний -->
+    <!-- HTML тег <main> визначає основний зміст документа. Зміст всередині елемента <main> 
+    повинен бути унікальним для документа. Він не повинен містити будь-який зміст, 
+    який повторюється на вашому сайті -->
+
+    <!-- nav --- Навігація -->
+    <!-- HTML тег який визначає набір навігаційних посилань. -->
+    <!-- HTML теґ <nav> , зазвичай, визначає, групу посилань, що є навігацією по сайту. 
+    Такі посилання зазвичай ведуть на інший розділ, головну сторінку, контакти і інше. -->
+
+    <!-- footer --- колонтитул(нога,підвал) -->
+    <!--  HTML тег <footer> задає нижній колонтитул документу або розділу, 
+    в ньому можуть міститися: ім'я автора, дата документа, контактна і правова інформація. -->
+
+    <!-- header --- заголовок(шапка,стрих,горище) -->
+    <!-- Тег <header> призначений для того, щоб позначити розділ HTML-сторінки як заголовок 
+    (контейнер для вступного вмісту) або набір навігаційних посилань.  -->
+
+    <!-- Що таке семантична верстка? Семантична верстка — це підхід до розмітки сторінки, 
+    при якому наголос зроблено не на зміст, а на смислове призначення кожного блоку, 
+    а також на логічну структуру всього документа. -->
+
+    <!-- Нові семантичні елементи дозволили поліпшити структуру веб-сторінки, 
+    додавши смислове значення укладеним в них вмісту. Для відображення зовнішнього вигляду 
+    елементів не задано жодних правил, тому елементи можна стилізувати на свій розсуд. -->
+
+    <header class="header">
+        <nav class="nav">
+            <div class="logo-container">
+                <a class="logo-link" href="#">
+                    <img class="logo-img" src="	https://opencages.com.ua/_nuxt/img/logo-light.9a60eb5.svg" alt="logo">
                 </a>
-            </li>
-        </ul>
-    </div>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a class="nav-list-link" href="#">Про нас</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#">Блог</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#">Кампанії</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#">Підтримати організацію</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#">Книги</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#">Для медіа</a>
+                </li>
+                <li>
+                    <a class="nav-list-link" href="#">Контакти</a>
+                </li>
+                <li>
+                    <a href="#"> 
+                        <svg class="love-img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fs-s mr-10 svg-inline--fa fa-heart fa-w-16 heart" data-v-4180a957=""><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" data-v-4180a957="" class=""></path></svg>
+                        Підтримати
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>

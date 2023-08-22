@@ -14,14 +14,20 @@ a{
 }
 
 .header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /*  */
-    height: 50px;
     padding: 0 20px;
     /*line-height: 50px;*/ /* висота-лінії,рядка */
     background-color: black;
 }
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* виправдати-вміст:проміжок між */
+    height: 50px;
+}
+
+/* CSS властивість justify-content визначає, як браузер розподіляє простір між і навколо 
+елементів контенту вздовж головної осі flex контейнера, або вздовж малої осі grid контейнера. */
 
 .logo-link{
     display: flex;
