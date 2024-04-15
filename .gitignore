@@ -1,4 +1,4 @@
 # ignore folder Test
-src/vendor/TestTest/
-/src/vendor/TestTest/
-/src/vendor/TestTest/*
+src/vendor/Test/
+/src/vendor/Test/
+/src/vendor/Test/*
