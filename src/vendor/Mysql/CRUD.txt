@@ -1,0 +1,31 @@
+CRUD --- These four actions are collectively referred to as CRUD, for Create Read Update and Delete, and represent the basic concepts behind data interaction. In MySQL, we will address these concepts through a collection of commands.
+
+CRUD(Create Read Update and Delete --- Створити Прочитати Оновити та Видалити):
+1)CREATE --- Створити; 
+2)READ --- Прочитати;
+3)UPDATE --- Оновити;
+4)DELETE --- Видалити.
+-------------------------------------------------------------------
+
+
+use --- використовувати;
+insert into --- вставити в; insert --- вставити; into --- в,до,з,на.
+values() --- значення,цінності;
+set --- встановити;
+where --- де; 
+alter --- змінювати,видозмінювати;
+add --- додати;
+column --- колонка;
+DATETIME --- ДАТА, ЧАС;
+not null --- не нульовий;
+after --- після;
+drop --- падіння,вилетіти;
+select --- вибрати,обирати;
+from --- від,з,із;
+auto_increment --- автоматичне_збільшення;
+long --- довго,високий,довгий;
+references --- посилання;
+foreign key(значення,зміна) --- зовнішній ключ(),іноземні ключ().
+select --- вибрати,обраний;
+from --- від,з,із;
+as --- як,присвоєння нікнейма;
