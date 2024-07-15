@@ -1,0 +1,302 @@
+<!-- Вивчення мови HTML5 за онлайн-курсом: https://youtube.com/playlist?list=PLenwk9TUJzJ6ep0oogRRQZHzPMtTGKqF1&si=YxU4g-IrRc77e1vj -->
+
+<!-- <!DOCTYPE html>
+     <html>
+          <head>
+
+          </head>    ------ це є базова розмітка мови HTML
+          <body>
+
+          </body>
+     </html> --> 
+
+<!-- HTML (англ. HyperText Markup Language — мова розмітки гіпертексту) — стандартизована мова розмітки документів для перегляду вебсторінок у браузері. -->
+
+<!--  тег(<></>) --- <назва тега(відкриваючий тег)> вміст в середині тега </назва тега(закриваючий тег)>  -->
+
+
+
+<!--    <!DOCTYPE html> --- Doctype(eng.Document Type Declaration - uk.Декларація типу документа) це частина html-коду сторінки, “інструкція”, 
+яка оголошує тип документа та пояснює браузеру, у якій версії мови розмітки він зверстаний. -->
+<!DOCTYPE html>
+<!-- HTML теґ <html> повідомляє браузеру, що це HTML-документ. Теґ <html> є контейнером, який містить в собі весь вміст веб-сторінки, 
+    включаючи теґи <head> та <body> , крім теґа <! -->
+<html> 
+    <!-- HTML теґ <head> призначений для зберігання інших елементів, мета яких - допомогти браузеру в роботі з даними. 
+    Також всередині контейнера <head> можуть знаходитися мета-теги, які використовуються для зберігання інформації призначеної для браузерів і пошукових систем,
+    назву документа, скрипти, стилі і багато іншого. -->
+     <head> <!--<head> --- <голова> -->
+        <!-- Тег <title> відображає у заголовку браузера ім'я поточного html-документа. Тег <title> - обов'язковий тег і має бути присутнім на кожній веб-сторінці.
+        Він повинен бути розташований всередині контейнера head . -->
+        <title>Вивчення мови HTML.Сторінка №1</title> <!-- <title> --- <заголовок> -->
+
+          <!-- Тег `link` служить для зв'язку html-документа із зовнішнім файлом.Тег link служить для зв'язку html-документа із зовнішнім файлом (наприклад, файлом зі шрифтами, таблицями стилів).
+          Визначає основний зміст документа. Відображає список пунктів меню. Створює візуальну шкалу. -->
+
+          <!-- rel (від англ. Relationship - відношення,зв'язок). Атрибут rel визначає відношення між поточним документом і пов'язаним документа. Використовується тільки з атрибутом href. -->
+
+          <!-- Атрибут href визначає URL-адресу сторінки на яку вказує посилання. Оскільки в якості адреси посилання може використовуватися документ будь-якого типу,
+           то результат переходу за посиланням залежить від кінцевого файлу. -->
+
+          <!-- Атрибут href (від англ. hypertext reference - гіпертекстове посилання) задає адресу документа, на який слід перейти.  -->
+        <link rel="stylesheet" href="style.css">  <!-- цей тег потрібний для приєднання css файлу -->
+        <!-- <посилання відношення="таблицю стилів" гіпертекстове посилання="назва_файла.розширення" -->
+     </head>
+     <!-- НTML тег <body> призначений для зберігання тіла веб-сторінки (його контенту), що відображається у вікні браузера. 
+    Інформацію, яку слід виводити в документі, слід розташовувати саме всередині контейнера <body> . 
+    До такої інформації належить текст, зображення, теги, JavaScript скрипти і т. д. -->
+     <body>
+        <a href="https://youtube.com/playlist?list=PLenwk9TUJzJ6ep0oogRRQZHzPMtTGKqF1&  si=YxU4g-IrRc77e1vj">
+          Вивчення мови HTML/CSS за допомогою онлайн-курсу через Youtube
+        </a>  
+        <!-- h1, — заголовок найвищого рівня. Він використовується в HTML-коді для позначення назви сторінки. 
+        Як правило, його виділяють розміром, шрифтом чи кольором за допомогою CSS або інших засобів розмітки. -->
+        <h1>тег "h" --- це заголовок</h1>
+
+
+
+          
+        <!-- Атрибут style використовується для вказівки стилю елемента, такого як колір, шрифт, розмір і т. д. -->
+
+        <!-- переший варіант для надавання css стилів. -->
+        <h1 style="color: red">h1 заголовок</h1>
+        <h2>h2 заголовок</h2>
+
+        <!-- Атрибут class задає стильовий клас, який дозволяє зв'язати певний тег зі стильовим оформленням. Атрибут class,
+        в основному, використовується для вказівки на клас в каскадній таблиці стилів (CSS). -->
+        <h3 class="test">h3 заголовок</h3>
+
+        <!-- Атрибут id визначає унікальний ідентифікатор елемента HTML. Значення атрибута id має бути унікальним в HTML документі. 
+        Атрибут id використовується для вказівки на конкретну декларацію стилю в таблиці стилів.
+        Він також використовується JavaScript для доступу та управління елементом із зазначеним id. -->
+        <h4 id="test">h4 заголовок</h4>
+        <h5>h5 заголовок</h5>
+        <h6>h6 заголовок</h6>
+
+
+        <!-- html теґ <p> HTML тег p визначає текстовий абзац. Елемент p це блоковий елемент, тому абзац завжди починається з нового рядка, 
+        абзаци тексту що йдуть один за одним розділяються між собою відступом. Величини відступів можуть бути змінені за допомогою CSS властивості margin . -->
+        <p> тег"p" --- це є абзац,параграф </p>
+
+        <p> I love HTML </p> <!-- в тега <p> має за замовчуванням свої властивості в сss.
+        Він виділяє свій вміст від іншого контенту і завжди відображає на наступному рядку.-->
+        <p> I love HTML </p>
+        <p class="test"> I love HTML </p>
+        <p> I love HTML </p>
+
+
+
+        <!-- Теґ <img> призначений для відображення зображення на 
+        Web-сторінці (формати зображень gif, jpeg, png та інші). -->
+
+        <!-- Атрибути HTML — це додаткові значення, за допомогою яких можна налаштовувати елементи сторінки,
+         а також регулювати їхню поведінку різними способами.
+         Атрибути використовуються всередині тегів для надання додаткової інформації про елемент. -->
+
+        <!-- Атрибут alt додає альтернативну інформацію до зображення, 
+        якщо користувач з якихось причин не може його побачити (через повільне з'єднання, 
+        помилка в атрибуті src чи показ зображень вимкнено). -->
+
+        <!-- Атрибут src HTML тега <source> визначає адресу,шлях зображення,аудіо або відеофайлу, 
+        котрий буде відтворюватися на веб-сторінці. -->
+
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWAAAACPCAMAAADz2vGdAAACUlBMVEX////+/v4AAADV1dXJycn7+/uioqJ2dnaLi4u6urr///319fXLy8uUlJStra3//v////mbm5sAAPr4///7AACEhIQAAPXj4+Pt7e3///WRkZFubm6vr6+ZmZno6Oje3t6/v7/0AAAAAO8lAABmZmYAABITAAAdAAD//+ySkf4AACX6//f3/P8AACAAAA0AADHs//9nafwuLi6IiPwzAAAOAAAAOWgAACwAABgRERFXV1fGyP3y//tLS0skJCTT1vX9ycPt8P62uvb/jo7I5///7sE+N2lVRCquwNpzXTwiFSYsUVuylXAAKVuum30SEiW80ObZuJrA3t+0pp6CemmIsckAGlbY0r06ZJjy7uT25tIuQGeKcVojTW5WYG4VGBbWxad8m7ybhl+UsLZGZnwAHDayspvD7e4yWE0sABYcJTObpdA4GQAAS4DauK1pXVC9mmVQMBp0iqpIMABKZYaEck5VeH6QnrNxShiGYSY4YaoWU149CgB5j4qpx9vEtpFHCQBOIABNfZgAFWCRSgB3Wz5BNBF1oM+vfFjvyJ+eaygyYHUmNUWviVReDgB3XifkxIrMnnouEAAAOoNcMQCzmoXHxqOlqbpXTCEnRFoAAEkdFQBiSThbkKSXakBFKyUhGjxGPzj5sab2zM76cG30MyqeoPr9jIP8RUxvc/v7ZW39Y2IxKfdISv7V1P/72ctaWPn7Pjr/hIurrPr2WWX9op98TgCXYErI3s5CU3O+oooLIhel2PYlIC1SMCVEFgChw8r//dH+1bJei72QZQBRTTjHGI5WAAAgAElEQVR4nO19i2NTVbrvWitdoVk7zV7NaprskjRpKSWwNxAqKNDSNrVcUUFLATHhVQSZexFftdrx3LFVz6Do6JzRgzL4wCOFAgotDqdzRq9eH3Pu/3W/b+8WkjZpmzSRAn7QPHb241u/9a3vtV6E3AbiiseF0KVOFRU6JRQ+USE4pZToVEr4bugcToQvgutSckGoLpDKw5BO4MambkrnK6VcSGGanIuEYQnNRF62/o+EEJbFlS5MajMigfcyMbRAEtwy4Y2aCCsUhwgqpAJuEWJgmxiWkiT+0DYDisoBVqgEOJ1gBZSFjIc3PfJoQvE24jyHcC5NYZm6IaUyeJxuZ2vYDgVoSmnpQlIAl2B9l4uhBZKuxGPscdZDboqkEIAokciu5CBPYidjbG2vANkCxCmZPK1sAO/azdgeYkjNJm7/102a0jQltRDZ+UQybhEzrmkWnGLFtRCeZqFUlIehBRKogL2R9exJQ/CgTaH6oJWKhogMBYMaSQWt9PLeqAsKAL8RGQ2qeuc8Xi6GyPZ9+w8osp2xTZvYps3s8SbGDnZsZYdYd18zO/zUvofZA0fIMNtwVO1nT3uaN6zZxNgrCbFIVQQFcf2FHVv+O71vGUNW/+f/WrNlBTv+TPyh5exw/ETzs8+tfp6xo8n0erb6d8OMHXkISs7WHO8ug8BQCgYg9eNQurmHvPBE+MVHj53of6x5+eCul55I7F89mH6RDQRfZq/49rM9qd0g5jvZ4T42+PIq9+//pAy1OAEW0Oxf/Rdyup/s3eDev/rMw//b9Qf22rb9bOi5ZYPBc2xHzzA76vF9ONB27PUnSXzFQPCN/l0bjjy1ursM5ZFgQ+lOtnnzhjfJ9n8lf3wzfvrtdPOQIOnmPe+slSdfeevt+MkDVJJzB5RxckCeepK8wxIfrFXv/smS+uLUwVKJdPN7m996ItHHuneuTb5/P/lzP5HGvw2E1vd+t2//s2R4bVKSdx7oJh880P3O2kR8/TPpFb1/WVMOgAXVSfzko01NTU8n+vrJHwfk7qGtK4YISa3f884nj+1LvfS2sf8AkeTVZy3ZxyqXDZH0QQR4eBBcoMWpg3VBtr+3tGnJh3tSSxIfPJDs6zf+/KaSxsMDqR8Dj3e//+9k5wNJQoZXJYXx+1dOH1bG7p6tK3rTS61ytEiLpD7acMQiH6/oT6Y8L571JMl489NnPH9dG3oMDO1zHw6AHLzm+QjUA+en2IASJo9Bu+sGY81VGRhaOHHj2ImBXrL3pfeGjF0vr677iRh/Zq+4n2dDw8vYnvG/ru2Nv3H2SF0zlCXUxz5J6BY5VrnhtW2qHEYbvO69nx5a3pN6YxPbM8w2HWJ7RPqRyhPs2540W34k/tmmNXvIdx+yjUcS9IP+vo09OjfTbOMh1g/cLE4NQZTxcHvz5+Tc8U/fTH9xvOXTJ4l8vf/55e9tiz/8w4B67PFP36Tp5zcdr1Rk63+E1g+C+2R8tqn9kfeS5QBYWLqsD9YnDPBULA19FcvYu7ynPtgmaTCoRApedPBswMcR7x5/qx8CEmUEg+DqyMWpHwjGTFrKsqSZClkilUpqbUbqx8F4iEuhhaRMaSFT6KaGwcZf2Jc72iDCQo80BAfKIDEQxhD0aKmEYBEfJeTH4ITvUxhrUFlfTyCqszi8crGz/WhCN7AhCYnOZum5KQ3pBsS/EBpzEAYhpBTxZihSUnJuSF0LEAkyYkKErGj6s/d6paFD0akB5RRlABg8GgjNwFczpGVCmC64SnliHq/S7RjdGyYWBpMAN28DRLnESM4SFuXWIlUQIDQAL5RIQFgPLAslpDcWq1B2OWXoS2JwCJEQejvit4RuB6VwRVlEhmLGQ8cYHWpWh6q0FZEQ0IzAGocjENlTZJhygYkSHfmiGOQvTh94duKUhN0uTAaQ29/+KGYlIhHOAdvbzUuJCPANVpM6LNrtLxIml4jL4/JSgPh2M1MioqTeTWmouoyJs0KIE17FuVvji4EZ6tS4/amYqx2qcGuIcl0062hRzOS7erbfsk+EZuQOEhKKaE7p5nwoWQDLc94c1BRHuStK9CZrxlUXw/tgwaqDzm2LuRWwwO3/OU/g8+cxWhVEraVVeef77PLJ+kIbtRb0hiMezcEX7lQfrvK46rWiOJn6y80Pwk941OWdi2JVyA9gxnmsKuytmP3sCm9UK1/CmqC+IprL43MXST6Pt55PyoBTWVq0Ilzs7Xy+iijPU1p4StDn9nhdc1HQBoyiyBMenPP0ipjPFy0Pwo5Oi7rdnmhIW4jBpXRK2S2oOXCI+qJhdzhEpisZR7IrfKH582P/zVNXhcIePg9lXShBE+Ik5PYF52k8fiXi0WoPn15R+C0WK99DXZ4y+D94xyia2xnFuZ0EmoC73FoWQzZ/Ll/Zngm393rLIcI06AO7wReH8zpFyEvIp007Rnld+cIGtJ7V8Fp6HRFBfDktpxEtlBxnrD6cdZBjaFZGZxVFuKIMQagnWPJbloSgvJ5oJp7QyMLR8loKLYJtuaRESV1pb1g6AhH2ZcCJTmB1uRMLS8pQf9Ulv2NpiGNeI8PoYBTjLWs0AOQteQuxffHS3rJE5ARtt8LXqe/lfSovAODJqKoAnSKEkFwKY+oZQhqlSpMrS84c5yGxZ8QUNx8hFC2w24MLKWVRDOkcxykqvoDEO+UOvvNnWZmGNKVuTdWJ5Nw0imcgkyRXfEZdWZYFR3V1k8OCBzMJ09KLg4gqHZ5sLWRshA0TLcCxE4aOXVbxmxKsSylKJMHCImrGMAQTjiiVIUV6ofqKS6PI3ktBqYI2pdqKutomyj3hcLAQlmk82dV148bYVIGp6Oqyimcgk0ztfOeMg6rz/PkRk9+SQavQQCrZ1VqsiqBK1HeeHyki5zeZ1AqRCsaYZ8prdzKpk7nbDFMsJfYJ2r2BnMdX1vob/fdhgXVbHTf6kwR1sS6wo5Dq2GUIWg/7cuFC/Wb8R+00LgnWRTStriokdM4tbnJL6FJZYJmEmappQAlWlJrYFS2gfarOhpqaB5XgCoft6gD0hQnFueA63Mpb5ePRquppOVpQKIYhsY8T2NYN0lF7PY4nCG7oJo75ldjpDbZDYmcrdspOGXGn8LGIj3gjEeBViJGv4PE1FzsV9neHI2FSEam2DamTiMtf0xyLqrk3uXl4M/NMnssdgDnq5AzTTKQAO2HaqFHgKzk6esV/H/5gUskNOTpqSzBUgA0qlA0zrIY0sG2adgctn8yj4WOCrIVQxjRo+CY1QIPLNqXLNvivtIkJW3B00LpgypRso1yev1BzSUcdAQfgtb7hsqZAWwu4aYwtJVG2ZZqNNk2TIsfweFNyoYdWdtn9w0IARzbAAL0lTI7MU6c/ezKlZn9wswDxss34LXSx5vKliQcv1owgXlWsCh7ZhOBs3hKbNSNow+nZwloqwMdFCcZjfJLRm5V5E2CwpsiVAXID6kwYstUBWI/jDwClfZbhyB2UCwhFGD6AEGapH3iIBryT9naoQbBooF0loEcs3qYr8BBsWybAtrRRBV4FQNpGOkGCFdobqE5LhS5eVnhaG6Z1WB2p39SUrTIAWR14AsYo8E2lgQ1JOoJi2LMUhGEA7nCSgUeyTQhKMHNDtQXgrrrx4CUN+BhpuKSgGB4WhkdW4kl1m1iTaxZdBT9UbGbtPg2sXBXzuAJN7ih6FNGlTU0R4qpqCvOMq6Gmk2M3rqwbHUNVEQcYWx0VYejxleuAUEch+Mmu+9aNJkfXrRvtuLJuJXxY2QpGUYRuJa0hyNTamwhpaUEbHbr01YWvVGriq4mQ0lOXvv7qq7/ZogY4jkxcuDCR/tuFr88rAHj80tcT4yC/bakHv264+PWFCxfOK2SXVZNQ+9Jp5QRuW+9bd+XGaJcBLF0B/kYltjGh4WekKxqoCz42uu5KVxIH/kRv8leP/cwgcRpUHSXQqAQVCTpecwHkANRpDNpftV0L9QHGlkTzSC/WfRPbVOdkpatYC0OKgd5ww/uWJfhts5Yhwdy86vfX+v3+lSAKFLTsJMBSJhv9tbW1tg7mRiuc5fc3Njb6r43WNsJx+HKfFJpzf5ugsWgtSwnZsgVUZWIcFFzDJVByNQ0jagTfLqIOpm3m+Yt49GJNQ83XALD9pQF0bxtq5Ab4V/OfFgAcBFkLtSzJTr4ImbT58PuvacLoQi7WGXa9heCz/Q9+EMl1eErt1RtSeG/xx0KEBlkF4XBnGypQw53nLzd04qAuF3OREEixk5+PLmWssj43wDb89cQZmwAAu12uinaGNi4aRohjrs0t/FZGAxTa6OjYWMfY1cYOu62JKRUBhenouGobOWJ0+P03Ojq6rtb6u5LGmL/2vo6Ojiu1Y4SHl05RAB7KWwKEbN5M8bapzm8aGhrOj1+CEqjx8c6Gi/Zt1XmwKyPjEwDruAlm7uKD4yOdlxtCoEZSnQ2XR0ZGxlOoeuqZD+orkB26CuN6bRc8erT2atLQJXDUuM6w2dau1sLx1quNrYbUrvnv6xjruHHN32qkIk2T/DW5odBRAJjaAKM6Gce6vWSHhwiwZlss50muzeyQO0eMxitBQINOetcGOGbnc7DeKNx9EyYeNC1DB6OajYMmM+7zO97ZFMBoy3XpAKzTK7WtyFEHFMMwkrXXiSHiHf4rRpYPivkvF8TzMfgkFdW+qbmQggguRbnSLa3mov1Q/k3DOKoQkFelgw6+pNp0er5hAnS0DjrYagOXQiGD1VBhYdc0FWFeqx3t6tDkWCvqWGhltVdsCaZG6w1DBoG9uC5Ha7skmmHr2rVkNjqEu6Fp251OaAH5+Qe/rmkIClRublCp8AOdKgmpOMTac4iwawnbFAiRyQi5CuuE8DqGPerUZVtJ9FtuSTDYCW0UWtS1q7WtRibAFK2y4QAstMZa8DIguFzn7zD0pP86uhSt/iuEV9TVVSHVVbntXuXJTj54gql90wAumgAbp6RUoRpbgkFbXFCmlKYCgNtQB4NX0TZRMwH4to03XIanmPbAvJsDNbIkWHbYiqDxPk3ocfgHlWwHGjp6Nh3+q0nQZub1WlvnoeaLGr4qh8GquphT7smy4/A1qFRUUkTDJm1HZLesEyhaW9KnAwytYAtj1dzORk1JcCVIMFQfAsxtH+0W18pI2qwAteL0QolGDuwdzn6gcZRgnJOhXW2Mgw9ByXV/FHy5xmuGQcUYSHBo9S0V53O67W1DAOE21S42aOClKXQbqdJARSjw0tIAsA7NQwDAlHY2gBehyETNeTgIFv0yB3MnqYLAGnmcEehDzXStvHIVVK0V1y0d/OB16ECa0uSiA/UGSDW/DrYCVHIj2IqOTB1cT+hUrzfWFbFsF/1CwzjONZvqH6VO1zUYqyV5Y5CKFiwtVhVKMLyhBNsKqGmyEm6RLq+B6IKeWFnbAR4FfBrz34dvYKXBb7vq18DvMcQV/w305jqAZbDe/uv421jtFUFSniny0izNYyqUYIj2cZ6KpZRW8w34Y21cfYM6marzDQ3KcCTYRIAp1ESq4euECQiHcBJpzqKpKx0SK3/U32UIIy6StesM9DB1A1redfDURm8IUBHg4KCfhhGR6yaDwaySK5UCOYI6/romlZWGwkEHYMeagiRPngxLGWtnh9CoL2ER1C9LWRVYjZgbTFzMk92VaIir/i6Ij6/V1q7skAJC5ZW167q6OtDTbe3qutp4A6JlIcFIr2ztGgVZ7zDMrsZrSQgzRv3XkzIj1ZIJMOjczvMXGzrPd44ry1LwZQJsW2ensADTmonOzr+BfSGWvNSAalq7UHNBAysnLzfATxMNNSPoOeeirkbQwa2tN676O7hM3ui64b/e1dVqgoB0+a+NQUHAvZDWVT8UAejKuqSZcXE2XhM1F4Ch8/9Zc4Fmj2XVImDHorPEGqhLOHgMS8ghdBvALQFaym+2lKyTQXPZblrjNVBcHQQjZXDA/LVjuljpRzcI/l8XBk1esz0zKBiYQziaNNbhgeRkJEInI8Wbic62r9HnqmloqEmBMF/GD3hgwrT0zov45WJDTQKO19R8k+L2G8ghGWmw/bS/aZTmHMALYtpoa9errWA7riJz6DPeiOtJYL8Rv4GbJtuu2N9qa6+FTJ1P6fLsqFuNf2MzWPOVVFnIA1BbvHOMpMILeFWQeOvq6sCsx+AtaL8iZQ/VgviYt65cOYYvNyjpWunQDVPqycnPINkYmY6Nruzi66AS8HgXkfYbZiQc9p2AfOq2Oh1/0KHzXLesqS8PpnTV1sZHJiY6DVAgZAQOdVKKbyC0FqWp8w9OjGgmz0hhZgFsjnYAH6NjHBMRY5P8jSapYY1OfbEwDZGEgtwYSxpcp7ccg+xbCj4+AU8fURBEZv0Q88yIdwujAi/D6dwGt9WzENfAThf31KmHKx01siKphm/uxEHms5JdI4UO+Eadr4FCvnEF6BrauoXxwJUBkfKFCxdrxm//MPjSEw8WPHQF4hSXLpO2+3nthmEU2W4mCRTyiB0cX+4sy8TE20oYzDUV0oWERKm2xAW6LDkGATUotQXOHgFXQR+HeHgEPd0F3WkREnj8bnd9wRLs8nlKxABmqvgimMBRLqIk5goXPo7HFyzViDvMeFdGc1j0u4VCblLhLVSCgmGtVGNTMEnm9mCuZRGNgysh0XA9icYKBdgT1Uo2ugpFuD7kC89zDPUdRHbfWTBMaMhXSOvEtFg116pKOGy2HvRN0O3hdtdh8c78YiPMv9NqDQLtHCm4/FdRe9i3Vl06pUmJD82sq7LCqfW7BF87cVGBiXBemD6lJAJ4YKq3ZEjgqF/QUhUBl50BL9VtbzdRrkXsTHB1YSoihNLrC5YMCLxbyEkEeqqCi2peyMKIE5/TT+ouRBY5OHbYqqMlAwJdYTdxhsbwcCTkzMK584mSKWe2EAuOPWM4E9XnKp2ogfC6g7bGoWgR3KHFNTmkeHJPdoCASBZA9eHJrsySYQAAowg744zAoajy3B2GzhWbxMhVUchlYezHwuikZFKGjoMvSKbGy0EkXl0QR4uQcNwUrZoaPBUsILEAPoQNhKtUyYhJQhG+9Y173a7JIWSlfcyvRrgSiWtykCEPFZJYALlH2Q0WFJ3MgzIyItg0tBiO7rpj42fgHGKxqR6mghIL7pAtVqFIaQtPM2rZCeZCPtvalfAZvyKhLxCaGm9R0LQtXufMCglVltZhpRm+zFTAHKz2FLP+wWIgSoPhm9Ixf4BxsKeX2CMxtboSSzANuTPuOPkh6q7g5M5MT1SRjMJUz8+vx3IGJge68hKrCODAXT/9lnDQW+2l5Vx4pFzkzeipd+anzoNwoGb1pHRxO9woGWGtzVTrOMaRx+qid16ymFdlTYTxzs/tBK8uHJ1yndyh0urgyXAui0scNccJ91XXL6IMENXmQb5skXWF+dQvs8VQIE4BMqUf3bkGIxfPtT1HJzJ9QZPJytTcPm7b1sXgFy/1hX1zkjdjxA1uDHDzh/ASbbbWmBGSTBe3UpAvb6WFImHMYy6GLFBgXu4Tzzgry0a7ZwU4Y8WR8Pz0dkEEljP3cRwHGoiRRTGHOjCnQZgMQW8BnCkXswLMM9owJiMWwmcuxjDPkfO5dkzvrcxseLeNAnOW2xktleFzZmo2dz7XHk/xZoDqqijDUjYQU+aq38l5bTwWiTqs3M4YOrCwy/MBbPui1RlNdNriLiWhqaRa3hM0j5045rcz9CgXwPAXysxZaO7SSzDHR8wCXUaG4u4DGJ3gzCS7VlBP3vwIx0jM1tfH0ZOwMxS30V+bAbC4tX8MxbXKcVowDtcTOXnMDzDVqjJbZhkARsEMzdpB6MxKcVV7+c0DvzpNBxjnxPc12XSEmFxwKTlOx+IAc47VWPIDDOEIyQa4LGQvODgHUW91lE+Zvl+bpgMshSIfsM2fLt+84nOihKZJamqWloI/JWeu1jILwL76TAnm1WUpGw355gEw4R53dGq6/K9M0wHWEeAdiVMHyN/fJHt3t3w5mIjvb9ny5ZdbWvaImdMe8gOsRbJbZK5ZpQunvL5wJqHfbvc+3w5dPANgKcnOfdb7B9QfD2/99GBV3VvfWsd2s4OVleztQiTYcYIzQC0TwHQeHVjOrODblI/P6UVo8tRZpalTqwJVVbvZkEyzHmGseDvHek75JXj6L/NdU3YGzZXcDeed75fFEPxFqyt+tcjuJs+5ABaWOHcAXv7raV84HPZ0qK2shxgvDsmZ7OWN5OqnC1bx6y9SUlE5Cy1xz1kHzl2Ae1ddYLZblYrqAuFZASZx78tnXQkxzPpd/zh2sDd1jA1GccmumZN68gLsmT5WqrDhKhmEq7XM3rbnNWmEcl7g7KiFUNXNR+UE+AWczvkmIcPL4P3b3t/j1wQuAzTjzHwA8xkq1zvPleZnEMCSH2DqLPo6twRPrbtTJBMFETwnMjvAuClVFOMfLRoEI52KBqN5NGgugDGKc3mm+5zRWPHsziHBi5BmB/jmMgsQwQni7G2bZ3PFXABzJ4SdJi31xY7tuQsBnlyyAfu37LXOnPmdOW+UW4LtMcHZOoJqxabT7kaAJye+O0A7a13lWXIzJ8CcVFRM1xCUFzLzIOvKuxDgaWRPzSxEReCY4BlH8/TvzEl5AZYYdwpJcb0S4Sx8pwtTF2CMcQFN3CgOdzHDdeikpLqJ6RRJLXvJv1trHehc4gVwtqFLgluc4b51Apf9k86aexaoSZdmwOVU53DAeTjFm+TdlbYwgGehnADPdIIRpqoiH5EXYLH98N6Y17IXFFTcXnlGp1yXJje5vRsdVxz+CwM3F5dcGULHFw7g8Vu70uNOh1LH3ergAzRaHeuB6vZ+gdRUhk7jFbFjbJu9nSBca9cGrpwDbRsXzslNZQY4x8gUSoudKpcPYEHf3wju4wBuTWlYuBCws2wdOuvU/oSvErOv8Iu9gh9+EZazD+BNlxO3esd1iKewsk8HccYELTQIFT95tqmp3zIlXCNwE1uHK2FDeFsAhjA5l0dfcgmmf3+iJzjMtqXdkW3pSHWPkXJXR6JC7qqOBHdFIklhhCNnkiq+K1JtuiNn9lZXh9XeSCRhpCKR2K31ZkSqoipyxpJwCySPO+Lywe8G3KLXCFcN7dzxj12+EJWRyBm4vLr3IzwrciSRilVn3iabSgnwTDWUy+WlRWd78gJs/v2wYQ6v6e5j7J/DjB0mJ4+3H1rbk/qMrT4DsVFP+rON7RtWbzNOs7X1H7Jn4ZRvUy+x1b3fsfZ2EHwqbTUhjb5N8L2f9LFDDP4/+gM0ix/YgAm3+GknY/3fMXa8eXVvmrEdiWG2/Mjra5rZpg2rEs9tgMsOE5PkWjzgFsBLit7fyaZArjDVnSMqobMMEykSYGnG1zN2ICH372vTnrof1Gd9au8fDpPUG4e1YbaH/P5sbyj92dnEL6wn1MeGyLkB+XL7xu6t7HAo/h1723T2CFVST6Xg8sQ7G7u3r028e3T8pX295sfsma1s29YVXwyoF9YMtqVO3q/ip98k6WVDoT8MvcN6hlcnZCqUOnc2YeZc3SqSIU2TiejiKFcii+cefTnPIYMzKD/AQjwXO7bsbbEfQ3lA4DG2vJ0NEvkyY8vZT/E/HG9/5P+0bOn4xV7I6Xvj1YHhHR8v7/mOffnIoR9aBsEZtZW2+dz/XdP+6b5EH0u+sEr990D8x7dBn786kGYdp595dUBtvz8h1E7WTXaynlMHEqn1295hHcOfqJ1fskfWnE3InLuD3wJ4YSkQmmt5mVjuzVAqikxG5ANYvtwP4WL89AA5tc/r3X8/eeGTBNl64jDR47GKePOQPH00AWF+L93Kfqp4DgA6996hnl/WdP8Cwk2IFxdWtZeRTq/YQ+Sps1bcS154gKR60m8caKN717/984ovD5CTA2InCD8/+UlCkJMbl/cq6YIm0R13pTfsIXGQYJFzBfhbAC+8F4Vmf6GkLtdon+LnweSV4I9AV7ZvYN2gJP8JyvLNPtStG1i/ovKpFWxVb3oDHlju+gPb0XaC7XhsAzucXs/uT7zPjv9HMxtoc/wA+vOHa77AnFYifWID2/SMSL+4ibWzfeZDbFViO6h242X2wyG2TaS2pZcNUKHiD4MO/heSPrH6EbjsYCLnLgSRciXucExwnpCt5ADL1K7KQMSizwUC2/oqA4Nkb11daFdgCOKE7wKVgaRMVwcCZ6x4oLIytLuy/1hgUKUrKwcTci/86rJM6sieTNUFevYGBhNpODEwpNI/busL+JTxUaCH9AUCPwljV2VlryA7N/at7aUSvBK4fLBNT9cFevEymWuN+vIBTMiM9U4nfyhk9lfWlfkAVrYva6EDi63dFkhcdl0Kyx5mwG0n1cST7NX7JLF9XcPZ0VtKJ9hAd9m+HJcgNMBp+2jFQXDacJd3bhlwqe1Oc5Ogo0KVdFonPEIndh9l7v3gyyjBpDLnZo8UF0sp9pZ5IjlUb7gTuokrT3LLXg6e4+ACA96cPUAERlwQqsEfxmjwCpEv57gsOnciEzTUugEHAWk4TtNftK84m4RgT0jcIV6HUA7CRKmksesM1zHKw+yMbkEIzg2O0XQuLMsGMCfR3PuJ4U5uxd0yP8CC6HbcqnBpewFRsJ1DgAjXoPjmJKl0qXADBHTHMOMAZ+MW6vhvMh2B+UIDftVN3Fm9DRfHlZiaoLh+u3QCZyU57gCgsN7slfQx54HxNxW5bVgZAc6R57GLMZ+BnLmvvLOzaaWmfEkzgKnIjcB+AziL8na90WKj8t8AniJbPqvzjXYE/7jQJQMnL7zzAKZlApjyWVdMKnIm1x0IMJnvXM2CyI4J8y+8QYueBwMAV8y5MffiomhleVQEpZV5Z/YUveoJNIxgxZ1GxY6ymZVwaVZf3iG4lMRiRQK8CCZjFUwLTfBQPjN1ye3ZrXkkGFCytx8pES2M/cVPufBFE1eXX96oHePluq5QuvPm0hdOeaaoemN5R+lTe52dEthDg+wAAAQcSURBVNHdjzAlWiyHaq/Lv789iB1fUiILErz7AQZHL+yZSXPYzooclxRDgds/QbbclHPsDvm1pklV3asAz2XdS2We7lWA53SfSuNf0XsRYDvPT+1Nq/OOJiL5NYjdN8HlfHf1vhcBtvtRcDtimnfA4SwkcLM7Yc13h+57EGBidxxiL5cgRWx/I+xtkY354nYPAiykpikTXnRSzD4vIP7S5I/15xtKN43uQYDJRy0tRxPPtbT04P7a2LMoTRz87Ohj1M9U6VLAH/a1S13pILBKV9iBaJlS6unnt2xpPuz0uStl99bqAnsn4RKpTxs8cy8CvPPDs2dSb7ClvVKzlJlShqFpWpuRQITt/cwNzdQUR0HHJcGkJuGjxJNMk2uW8ff+6N6kFHANV5qWgDdcNMzCs7QEN7Kffg8CrMdPHybvs+U977IdbeIp9knyKXvE3bP2rwCw9jJ8G6TxH+3Dh7awHX+F7+oFOEW9zJb/Y9lrK9jZXuMkY0Npxt485ey8+JPxPF6mRLZev0cB7mOvvT7Ux9ie9Ab2z7+sOuOJPXygB39ECeYQ4T7GuuN/Prqr+fPHnj5zku3zfMT60w992zvMNg5uZcuPeE4/kfA+9HQ3Obe2+90Du04cPbbsJ7nL49nFuqcBeg8CTOMvDv7bgZ/XD/3MAhvfOvjpnj62uanprScdlwLH5+99/uBnbCj++tvpZUPvbPzd+zvAX37hE+1cf3rD7lXdW9k2IVLr95C9K7bF1w+R/34yfvrzOHwf37wZLjPveQlW8RfZ2u7U+m0/s+/fXZs6sUf0rWcHAWBneB0V32084vqYfS/392xd9n16aeLUDmWS4U8S5wYeOty3qhsuIyS9fo+Q29fuvl+R4cPx0/3xJdEP1v7k2sm+/00Hk/Ev2OH4sWWDx1h/NHpsWf/e/eynvQ+f7bEnierKOLkvduwt9lpS7t3V3B9LiFPsWVAR/0w/xAbM/cv3iP9iRzwv7khImnqJDek6SR87cdSTlOcOxHZ9yF6bNn7xXgT4HDtgbQWD9Cljn4Mefvx5NmScZuxP9o+gItKfsR27mkEWcWL5jiR5f99uUL1g5PYl4bJVifh+nHVupD7rPfektATZjjauV6T/Hzt+rJlty376vQiwEVJCpewFWRW6VlwDZxY+2ydLqQi4aQQOt4G3Bq5Z6ql/TyU1JUzwxDhcZlLw2MAvTv/46Joe8H5NE8/T8ZaW1Mxp6Y17EeCCSBk4q2IPnZEWoqndLYNQM3OkM34DeA4S0hWLeZIz90bnIK7CEDORz6bfAJ6DdBxQLnRuTv9BmhDsYdJz9ut/A3gO0jE5gXMkpv8gdEF1EyCe/frfAC4z/QZwmek3gMtMvwFcZqq7+wHmxLN0yW2jqrt/ZM9t3j7hV1xhbqH0/wEDTED6Hk69BwAAAABJRU5ErkJggg==" alt="на фотографії зображкнно структуру тега і з чого він складається.">
+        <!-- img - зображення; src - source(джерело); alt - alternative(альтернатива) -->
+
+        <br> 
+
+        <img src="https://html-plus.in.ua/wp-content/uploads/2017/01/css-selector.jpg" alt="На фотографії зображкно що таке селектор і структура css">
+
+        <br>
+
+        <img src="https://senior.ua/storage/article/content/dbf68ddd-b369-47b4-8517-fbbbc9a53f4f.jpeg" alt="">
+
+
+
+        <!-- Тег <ol> (агнл. ordered (enumerated) list - визначає впорядкований (пронумерований) список. 
+        Упорядкований список <ol> може бути числовим або алфавітним, за це відповідає властивість type. 
+        Використовуйте тег <li> , щоб визначити елементи впорядкованого списку. -->
+
+        <ol> <!-- ordered list<ol></ol> --- впорядкований список -->
+          <li>Розклад</li>
+          <!-- Тег <li> (англ. list item - елемент списку) створює елемент впорядкованого (нумерованого) 
+          або маркованого (ненумерованого) списку. Тег <li> використовується у впорядкованих списках ( <ol> ), 
+          марковані списки ( <ul> ), а також в меню ( <menu> ). -->
+          <li>Фільми</li>
+          <li>Контакти</li>
+        </ol>
+
+
+        
+        <!-- Маркований (невпорядкований) список в HTML визначається тегом <ul> (Unordered List Element).
+        Кожен елемент списку повинен починатися з тега <li> (скорочене від англійського list item - елемент списку). -->
+        <ul>   <!-- Unordered List<ul></ul> --- невпорядкований список -->
+          <li>Розклад</li>
+          <!-- Тег <li> (англ. list item - елемент списку) створює елемент впорядкованого (нумерованого) 
+          або маркованого (ненумерованого) списку. Тег <li> використовується у впорядкованих списках ( <ol> ), 
+          марковані списки ( <ul> ), а також в меню ( <menu> ). -->
+          <li>Фільми</li>
+          <li>Контакти</li>
+        </ul>
+
+
+
+
+
+
+          <!-- HTML теґ <a> створює посилання на іншу сторіку(Зовнішне посилання) або на певний елемент цієї 
+          сторінки(Внутрішне посилання). -->
+
+          <!-- Атрибут href (від англ. hypertext reference - гіпертекстове посилання) задає адресу документа, 
+          на який слід перейти. Оскільки як адреса посилання може використовуватися документ будь-якого типу, 
+          результат переходу за посиланням залежить від кінцевого файлу. -->
+
+          <a href="#">тег "а" потрібен для посилання на якусь іншу сторінку</a>  <!-- hypertext reference(href) --- гіпертекстове посилання -->
+          <!-- тег 'а' потрібний для посилання -->
+
+          <ul>
+               <li>
+                    <a href="https://www.google.com/webhp?authuser=1">Google</a>
+               </li>
+               <li>
+                    <a href="https://www.youtube.com/">Youtube</a>
+               </li>
+               <li>
+                    <a href="https://www.instagram.com/">Instagram</a>
+               </li>
+          </ul>
+        </ul>
+
+
+
+        <!-- Тег <b> визначає жирне накреслення тексту на сторінці. -->
+        <p><b>Жиррний</b> шрифт!</p>
+
+
+        <!-- html теґ <i> Елемент <i> (від англ. Italic - курсив) використовується для тексту, який з різних причин відрізняється від звичайного тексту. 
+        Це може бути термін, іноземне слово, назва і ін. -->
+        <p><i>Курсивний</i> шрифт!</p> <!-- тег "і" --- це  Italic(укр.курсив) -->
+
+
+
+        <!-- html теґ <sub> HTML тег <sub> відображає текст у вигляді нижнього індексу (Підрядковий текст).
+        Підрядковий текст може бути використаний для хімічних формул, як H2O. Текст при цьому розташовується нижче базової лінії рядка і у зменшеному розміру. -->
+        <p>Хімічна формула води: H<sub>2</sub>O</p>  <!-- sub - під(знизу) -->
+
+
+
+
+        <!-- HTML тег <sup> використовується для написання тексту у верхньому індексі. Весь текст у тегу буде записаний вище за решту тексту на кілька пікселів. -->
+        <p>5<sup>2</sup> = 25</p>  <!-- sup - над(зверху) -->
+
+
+
+
+
+
+
+        <!-- HTML теґ <form> використовується для створення HTML форми на сторінці. Для відправки форми на сервер використовується кнопка типу submit , 
+        також форму можна відправити натиснувши клавішу Enter в межах форми. Якщо кнопка типу submit відсутній, клавіша Enter імітує її використання. -->
+
+        <!-- Атрибут action (HTML тега <form> ) визначає адресу, куди відправляється форма (за замовчуванням дію встановлено на поточну сторінку). -->
+
+        <!-- Атрибут method (HTML тега <form> ) визначає який метод HTTP ( <get> або <post> ) використовується при передачі форми. 
+        Форм-дані можуть бути відправлені в якості URL змінних (за допомогою method="get" ) або як HTTP POST транзакції ( method="post" ). -->
+     
+        <form>  <!-- є два обов'язкових атрибута для тега form:1)action; 2)method -->
+
+          <!-- HTML теґ <input> є одним з різнобічних елементів форми і дозволяє створювати різні елементи інтерфейсу і забезпечити взаємодію з користувачем. 
+          Головним чином <input> призначений для створення текстових полів, різних кнопок, перемикачів і прапорців. -->
+
+          <!-- Атрибут placeholder виводить текст всередині поля форми, який зникає при отриманні фокусу або при наборі тексту. 
+          Зазвичай відображається сірим кольором. Нотатка: Атрибут заповнювач працює з наступними типами введення: text, search, url, tel, email та password. -->
+
+          <!-- Атрибут id визначає унікальний ідентифікатор елемента HTML. Значення атрибута id має бути унікальним в HTML документі. 
+          Атрибут id використовується для вказівки на конкретну декларацію стилю в таблиці стилів. Він також використовується JavaScript для доступу та управління елементом із зазначеним id. -->
+
+          <!-- Атрибут type повідомляє браузеру, до якого типу належить елемент форми. Без задання використовується тип: text. Нотатка: Атрибут type працює у всіх основних браузерах. -->
+
+          <input id="name" placeholder="Name" type="text"> <!-- input - введення; placeholder - заповнювач; type - тип -->
+
+
+          <!-- Атрибут for (HTML тега <label> ) визначає до якого елементу форми відноситься поточна мітка (в тому ж документі). 
+          Порада: Атрибут for необхідно ставити в тому випадку, коли елемент форми і текст розділені. -->
+
+          <!-- Тег <label> (англ. - мітка) служить текстовою міткою для елемента <input> . -->
+
+          <label for="name">Name</label>  <!-- label --- етикетка -->
+
+          <br> <br> <!-- HTML тег <br> переносить речення (рядок) на новий рівень рядка. -->
+
+          <input id="email" placeholder="email" type="email">
+          <label for="email">Email</label>
+
+          <br> <br>
+
+          <input type="date" placeholder="date" id="date">
+          <label for="date"></label>
+
+          <br> <br>
+
+          <input type="password" placeholder="password" id="password">
+          <label for="password">Password</label>
+
+          <br> <br>
+
+          <label for="age-young">Yong</label>
+          <!-- name --- Він надає ідентифікатор елемента, який є унікальним в межах всього документа. Атрибут name має схоже призначення, 
+          але він використовується для ідентифікації елемента введення в контексті форми. -->
+          <input name="age" id="age-young" type="radio">
+          <label for="age-middle">Middle</label>
+          <input name="age" id="age-middle" type="radio">
+          <label for="age-old">Old</label>
+          <input name="age" id="age-old" type="radio">
+          
+          <br> <br>
+
+          <input type="range">  <!-- range - діапазон -->
+
+          <br> <br>
+
+          <!-- Тег select у HTML використовується для створення випадного списку, щоб користувачі могли обрати бажаний варіант. 
+          Це інструментальна функція для збору даних, які надсилаються на сервер. Зазвичай тег select розташовується у формі, а варіанти вибору закодовані в тегу <option> . -->
+          <select class="test" name="" id="">  <!-- select - вибрати -->
+
+               <!-- HTML тег option призначений для створення пункту списку для тега select чи datalist . 
+               Елементи option завжди повиннен розташовуватися всередині контейнера select чи datalist . 
+               Якщо планується відправляти дані списку на сервер, то потрібно помістити елемент <select> всередину форми. -->
+
+               <!-- value(значення) --- Визначає значення елемента форми, яке буде надіслано на сервер або отримано за допомогою скриптів клієнта. -->
+               <option value="Arsenal">Arsenal</option> <!-- option - варіант -->
+               <option value="MU">MU</option>
+               <option value="Chelsea">Chelsea</option>
+               <option value="liverpool">liverpool</option>
+          </select>
+
+          <br> <br>
+
+          <!-- HTML теґ <textarea> визначає область в яку можна вводити декілька рядків тексту. На відміну від теґа <input> у текстовій області <textarea> дозволяється робити переноси рядків і вони будуть збережені при відправленні даних на сервер. -->
+          <textarea name="" id="" cols="10" rows="6"></textarea>  <!-- textatea --- текстове поле -->
+          <!-- cols - щирина; rows - довжина -->
+
+          <br> <br>
+
+          <input type="submit" value="submit">
+
+          <br>
+
+          <!-- HTML тег <button> дозволяє створити кнопку на сторінці сайту. -->
+          <button class="test">Sumbit</button>
+        </form>  
+
+        <!-- <style> – це тег, який використовується для вбудування CSS в HTML-документ. -->
+
+        <!-- другий варіант для написання стилів. -->
+        <style>
+          h2{
+               color:blue;
+          }
+        </style>
+
+     </body>
+</html>
