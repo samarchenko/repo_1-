@@ -1,24 +1,77 @@
 // online lesson on java going Youtube. link: https://youtube.com/playlist?list=PL7vq4D0vOpQbW4oply2GMQjVeYHNi05-I&si=hxSnEb3mJa4aAxCo
 
 
-// Lesson №1 vareible in java and data types
+
+
+/*
+
+package --- using package for avoid conflicts names and for good write codes.Package there are2 types: built in(Java API) and using package(created by hand)
+
+*/
+
 package Lesson1;
+
+
+
+
+
+/*
+
+import --- using for providing access to classes,interfaces which are located different package(libraries)
+java.util --- this is package(libraries)
+.Scanner --- this is  class  package java.util
+on  this code connecting package  java.util and class scanner
+ */
+
+import java.util.Scanner;
+
+
+
+
+/*
+
+
+
+ */
 
 class Main {
 
+
+
+    /*
+
+
+
+     */
+
     public static void main(String[] args){
 
+
+
+        // first code on java
+        System.out.print("1)Hello world!" + "\n");
+        System.out.print("2)Hello \nworld" + "\n");
+        System.out.print("3)hello \tworld" + "\n");
+        System.out.print("4)hello \"" + "\n");
+        System.out.print("5)hello \\" + "\n");
+        System.out.print("\n");
+
+
+
+
+
+
+        //Lesson №1 vareible in java and data types
 
         /*
 
             data types:
             1)int(integer) --- ціле чило. for example -2,-1,0,1,2...10000 but which has diapason from -2,147,483,648 to 2,147,483,647
-               * byte --- diapason number from -128 to 127
-               * short --- diapason number form -32,768 to 32,767
-               * long --- diapason number from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+               * byte(байт) --- diapason number from -128 to 127
+               * short(короткий) --- diapason number form -32,768 to 32,767
+               * long(довгий) --- diapason number from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
 
             2)float --- плавати.Floating point number, for example -2.5, -1.5, 10.5, 4.55... but save fractional number can be diapasone after comma from 6 to 7 numbers
-               * double --- the same as float but  diapason numbers after comma is  from 15  to 16
             3)char(Character) --- характер. this  element save only one symbol.
             4)boolean(логічний) --- true or false
             5)str(String) --- строка,текстовий
@@ -32,44 +85,142 @@ class Main {
 
          */
 
-        int num0 = 15;
-        System.out.print("vareible num: " + num0);
+           int num0 = 15;
+           System.out.print("vareible num: " + num0);
 
-        System.out.print("\n");
-        System.out.print("\n");
+           System.out.print("\n");
+           System.out.print("\n");
 
-        int num1 = 2;
-        System.out.print("this is first vareible num1: " + num1 + "\n");
-        num1 = 7;
-        System.out.print("this is second vareible num1: " + num1 + "\n");
-        System.out.print("\n");
+           int num1 = 2;
+           System.out.print("this is first vareible num1: " + num1 + "\n");
+           num1 = 7;
+           System.out.print("this is second vareible num1: " + num1 + "\n");
+           System.out.print("\n");
 
-        byte num2 = 100; // 1 byte
-        short num3 = 23000;  // 2 byte
-        int num4 = 1000000; // 4 byte
-        long num5 = 8000000;  // 8 byte
-        System.out.print("byte: " + num2 + "\n");
-        System.out.print("short: "  + num3 + "\n");
-        System.out.print("int " + num4 + "\n");
-        System.out.print("long: " + num5 + "\n");
-        System.out.print("\n");
+           byte num2 = 100; // 1 byte RAM
+           short num3 = 23000;  // 2 byte  RAM
+           int num4 = 1000000; // 4 byte RAM
+           long num5 = 8000000;  // 8 byte RAM
+           System.out.print("byte: " + num2 + "\n");
+           System.out.print("short: "  + num3 + "\n");
+           System.out.print("int " + num4 + "\n");
+           System.out.print("long: " + num5 + "\n");
+           System.out.print("\n");
 
-        float num6 = 5.505f; // 4 byte
-        double num7 = 5.1234567789f; // 8 byte
-        System.out.print("float: " + num6 + "\n");
-        System.out.print("double: " + num7 + "\n");
-        System.out.print("\n");
+           float num6 = 5.505f; // 4 byte RAM
+           double num7 = 5.1234567789f; // 8 byte RAM
+           System.out.print("float: " + num6 + "\n");
+           System.out.print("double: " + num7 + "\n");
+           System.out.print("\n");
 
-        char symbol = '@';
-        String str = "hello world!";
-        System.out.print("char: " + symbol + "\n");
-        System.out.print("String: " + str + "\n");
-        System.out.print("\n");
+           char symbol = '@';
+           String str = "hello world!";
+           System.out.print("char: " + symbol + "\n");
+           System.out.print("String: " + str + "\n");
+           System.out.print("\n");
 
-        boolean ishappy = false;
-        System.out.print("boolen: " + ishappy + "\n");
+           boolean ishappy = false;
+           System.out.print("boolen: " + ishappy + "\n");
+         //.
 
 
+      //Lesson №2 Data from user. mathematical operations.
+
+        //Data from user
+
+           /*
+               Scanner  --- this is class which reading data from source(files,console,input user,cod) or is used for get data  user.
+               scan --- this is vareible.
+               new --- this is keyword which create new object
+               System --- this is built in сlass in java.he give access to system functions such as "out" for inference on console and "in" for reading with console
+               System.in --- he allow program get data which user enters through the console
+
+
+            */
+           Scanner scan = new Scanner(System.in);
+
+           /*
+              String --- this is data type
+              text --- vareible
+              nextLine() --- Reads a String value from the user
+              System.out.print() --- prints everything you type in parentheses
+            */
+           String text = scan.nextLine();
+           System.out.print("text: " + text + "\n");
+
+           /*
+             ins --- data type
+             nexInt() --- 	Reads a int value from the user
+             scan.nextInt() --- receives data user but only integer  with keyboard, what the user wrote
+            */
+           int userNum = scan.nextInt();
+           System.out.print("number: " + userNum + "\n");
+
+           /*
+             float --- data type
+             nextFloat() --- Reads a float value from the user
+             nextFloat() ---same as nextInt() but only float
+
+            */
+           float userfloat = scan.nextFloat();
+           System.out.print("float: " + userfloat + "\n");
+         //.
+
+
+
+
+
+
+           // mathematical operations
+
+           int a = 5, b = 3, res;
+           res =  a + b;  // +, -, *, /, %
+           System.out.print("a + b result: " + res + "\n");
+           res += 5; // res = res + 5)) +, -, *, /, %.
+           System.out.print("res +=5 result: " + res +  "\n");
+           res++; // res = res + 1, res += 1)) +, -.
+           System.out.print("res++ result: " + res + "\n");
+           //.
+
+
+
+
+
+
+           //practice of the studied material --- calculator
+
+              // code which reads console what was written
+              Scanner console = new Scanner(System.in);
+
+              System.out.print("number 1: ");
+              int numb1 = console.nextInt();
+
+              System.out.print("number 2: ");
+              int numb2 = console.nextInt();
+
+              System.out.print("res(+): " + (numb1 + numb2) + "\n");
+              System.out.print("res(-): " + (numb1 - numb2) + "\n");
+              System.out.print("res(*): " + (numb1 * numb2) + "\n");
+              System.out.print("res(/): " + (numb1 / numb2) + "\n");
+              System.out.print("res(%): " + (numb1 % numb2) + "\n");
+           //.
+
+      //.
+
+
+
+
+
+
+
+
+
+
+
+
+
+           //Lessons №3
+           //.
 
 
 
