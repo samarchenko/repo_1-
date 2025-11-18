@@ -271,6 +271,7 @@ class Main {
                    default:
                        System.out.print("write correct number, because number undefined");
                }
+               //.
 
                System.out.print("\n" + "\n");
                System.out.print("================================================\n" + "\n");
@@ -324,24 +325,47 @@ class Main {
                //.
 
 
+               System.out.print("===================================================================\n ");
 
 
+               // 2 version calculator
 
+                   System.out.print("number 1: ");
+                   int a1 = scan.nextInt();
+                   System.out.print("\n");
 
+                   System.out.print("Operation: ");
+                   scan.nextLine();
+                   char math = scan.nextLine().charAt(0);
+                   System.out.print("\n");
 
+                   System.out.print("number 2: ");
+                   int a2 = scan.nextInt();
+                   System.out.print("\n");
 
-
-
-
-
-
+                   if(math == '+') {
+                       int c = a1 + a2;
+                       System.out.print("result: " + c );
+                   } else if (math == '-') {
+                       int c = a1 - a2;
+                       System.out.print("result: " + c );
+                   } else if (math == '*') {
+                       int c = a1 * a2;
+                       System.out.print("result: " + c );
+                   } else if (math == '/') {
+                       if (a2 == 0){
+                           System.out.print("ERROR");
+                       } else {
+                           int c = a1 / a2;
+                           System.out.print("result: " + c);
+                       }
+                   } else if (math == '%') {
+                       int c = a1 % a2;
+                       System.out.print("result: " + c );
+                   } else {
+                       System.out.print("ERROR");
+                   }
+               //.
            //.
-
-
-
-
-
-
-
     }
 }
