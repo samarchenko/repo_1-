@@ -203,6 +203,7 @@ class Main {
               System.out.print("res(*): " + (numb1 * numb2) + "\n");
               System.out.print("res(/): " + (numb1 / numb2) + "\n");
               System.out.print("res(%): " + (numb1 % numb2) + "\n");
+              System.out.print("\n");
            //.
 
       //.
@@ -219,7 +220,121 @@ class Main {
 
 
 
-           //Lessons №3
+           //Lessons №3 conditional constructions(if, if else, else, switch, case)
+
+               // conditional "if","else","if else" statement
+               if (5 == 5 ){
+                   System.out.print("it is tru" + "\n");
+               }
+
+               System.out.print("Enter number: ");
+               int user = scan.nextInt();
+               char sym = '$';
+
+               // comparison operators(оператори порівняння): <, <=, >, >=, ==, !=.
+               // && --- it is logical operator "and"
+               // || --- it is logical operator "or"
+
+               if (user == 50 && sym == '$') {
+                   System.out.print("number is 50: " + user + sym + "\n");
+
+                   boolean isHappy = false ;
+                   if(!isHappy){
+                       System.out.print("don't happy!\n");
+                   }
+               } else if (user > 50) {
+                   System.out.print("the number is greater(>) than 50\n");
+               } else if (user < 50) {
+                   System.out.print("the number is less(<) than 50\n");
+               } else {
+                   System.out.print("this isn't number\n");
+               }
+               //.
+
+              System.out.print("\n");
+
+               // "switch-case" conditional statement
+
+               System.out.print("write number(user1): ");
+               int user1 = scan.nextInt();
+
+               switch (user1) {
+                   case 5:
+                       System.out.print("Number is " + user1);
+                       break;
+                   case 10:
+                       System.out.print("number is " + user1);
+                       break;
+                   case 15:
+                       System.out.print("number is " + user1);
+                       break;
+                   default:
+                       System.out.print("write correct number, because number undefined");
+               }
+
+               System.out.print("\n" + "\n");
+               System.out.print("================================================\n" + "\n");
+
+
+
+               //continuation write code calculator
+               System.out.print("number 1: " );
+               int numb_1 = scan.nextInt();
+               System.out.print("\n");
+
+               System.out.print("operation(+, -, *, /, %): ");
+               scan.nextLine();
+               char symb = scan.nextLine().charAt(0);
+               System.out.print("\n");
+
+
+               System.out.print("number 2: ");
+               int numb_2 = scan.nextInt();
+               System.out.print("\n");
+
+
+               switch (symb) {
+                   case '+':
+                       int result = numb_1 + numb_2;
+                       System.out.print("result: " + result + "\n");
+                       break;
+                   case '-':
+                       result = numb_1 - numb_2;
+                       System.out.print("result: " + result + "\n");
+                       break;
+                   case '*':
+                       result = numb_1 * numb_2;
+                       System.out.print("result: " + result + "\n");
+                       break;
+                   case '/':
+                       if (numb_2 == 0){
+                           System.out.print("ERROR\n");
+                       } else {
+                           result = numb_1 / numb_2;
+                           System.out.print("result: " + result + "\n");
+                       }
+                       break;
+                   case '%':
+                       result = numb_1 % numb_2;
+                       System.out.print("result: " + result + "\n");
+                       break;
+                   default:
+                       System.out.print("ERROR\n");
+               }
+               //.
+
+
+
+
+
+
+
+
+
+
+
+
+
            //.
 
 
