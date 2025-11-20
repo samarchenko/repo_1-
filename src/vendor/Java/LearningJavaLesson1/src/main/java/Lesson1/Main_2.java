@@ -70,8 +70,9 @@ public class Main_2 {
 
             System.out.print(a + "\n");
         }
-
         //.
+
+        //..
 
 
 
