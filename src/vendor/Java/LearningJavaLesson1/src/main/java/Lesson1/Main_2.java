@@ -138,6 +138,7 @@ public class Main_2 {
              }
 
 
+
              // виводить максимельне число тобто найбільше чило в масиві
              int maxnum = array_data[0];
              for (int n = 0; n < array_data.length; n++) {
@@ -147,6 +148,7 @@ public class Main_2 {
              }
              System.out.println("\n");
              System.out.println("навище значення: " + maxnum + "\n\n");
+
 
 
              // проходимо по масиві і виводить кожне значення в консоль
