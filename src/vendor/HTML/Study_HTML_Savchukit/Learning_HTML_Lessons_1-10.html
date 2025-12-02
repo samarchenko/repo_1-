@@ -87,19 +87,31 @@
     <!-- <sup> ---  reflects elements text top inscription for example for mathematical formulas. -->
     <p>5<sup>2</sup> = 25</p>
 
-    <!--  -->
+    <!-- <br> --- break(перерва) used for moving to another line for example moving text and so on -->
     <br>
 
-    <!--  -->
+    <hr>
+    <b>FORM</b>
+    <br><br><br>
+
+    <!-- form(форма, бланк) --- used for create form in website which later send in server. -->
+    <!-- action(дія) --- this is attribute which used for send data on server which will be processed by the server, namly  in attribute need to indicate URL address -->
     <form action="">
 
-        <!--  -->
+        <!-- lable(мітка) --- serves as a text label for elements such as <input>.almost  no different from text but user can touch to text and it will be transferred to the input field -->
+        <!-- for --- element "for" used  for connecting elements as if as one whole element -->
         <label for="FirstName">First name: </label>
+        
 
-        <!--  -->
+        <!-- input(введення) --- used for input user or for create different elements in web forms, where user can input data for example text,password, choose files, check boxes and touch button. Element Type defined by an attribute -->
+        <!-- id(indicator) --- sets a unique identifier for element in HTML document which used for stylization using CSS and manipulation through JavaScript -->
         <input id="FirstName" placeholder="Enter first name" type="text">
+        <!-- placeholder(заповнювач) --- this element adds text hint in the form field which disappears when user starts writing -->
+        <!-- type --- this is  attribute determines type content, object and element pointing to the browser as he should himself behave. -->
 
-        <br><br>
+
+
+        <br><br> 
 
         <label for="LastName">Last name: </label>
         <input type="text" name="" id="LastName" placeholder="Enter last name">
@@ -159,8 +171,16 @@
 
         <button>button_2</button>
 
+    </form>
+
         <!-- <hr> ---  this teg is do  horizontal line -->
         <hr>
+
+
+
+        <br><br><br>
+
+
 
         <!-- title ---  title Attribute using for additional information for user which is displayed in website when  you hover the mouse cursor on element  -->
         <p title="I'm a tooltip. touch me!">This is paragraph!</p>
@@ -193,7 +213,10 @@
 
 
 
-    </form>
+
+
+
+    
 
 
 
