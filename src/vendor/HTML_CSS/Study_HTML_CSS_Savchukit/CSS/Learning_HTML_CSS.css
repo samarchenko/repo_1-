@@ -1,0 +1,41 @@
+/* studying HTML/CSS for online course on Youtube. Link: https://youtube.com/playlist?list=PLenwk9TUJzJ6ep0oogRRQZHzPMtTGKqF1&si=wDynVmA5Bl7oNnh7 */
+
+
+
+
+
+
+
+/* Cascading Style Sheets(CSS)  --- Каскадні таблиці стилів. */
+
+
+
+/*  */
+h3 {
+    color: yellow;
+}
+
+
+/*  */
+* {
+    color: black;
+
+    /*  */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  */
+.test {
+    color:blueviolet; 
+}
+
+/*  */
+#test { 
+    color: green;
+}
+
+
+
+
+
+
