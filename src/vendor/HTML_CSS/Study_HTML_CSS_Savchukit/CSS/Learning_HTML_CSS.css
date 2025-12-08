@@ -6,30 +6,30 @@
 
 
 
-/* Cascading Style Sheets(CSS)  --- Каскадні таблиці стилів. */
+/* Cascading Style Sheets(CSS)  --- Каскадні таблиці стилів. CSS is the language we use for  style an HTML document. CSS describes how HTML elements should be displayed.*/
 
 
 
-/*  */
+/* this is  selector teg */
 h3 {
     color: yellow;
 }
 
 
-/*  */
+/* (*) ---  this is selector which indicates at all elements namely styles are asked in all  page document HTML  */
 * {
     color: black;
 
-    /*  */
+    /* font-family --- Сімя шрифтів  */
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*  */
+/* this is  selector class */
 .test {
     color:blueviolet; 
 }
 
-/*  */
+/* this is selector id  */
 #test { 
     color: green;
 }
