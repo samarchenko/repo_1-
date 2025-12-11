@@ -34,7 +34,7 @@ import java.util.Scanner;
 
  */
 
-class Main {
+class   Main {
 
 
 
@@ -132,7 +132,7 @@ class Main {
                Scanner  --- this is class which reading data from source(files,console,input user,cod) or is used for get data  user.
                scan --- this is vareible.
                new --- this is keyword which create new object
-               System --- this is built in сlass in java.he give access to system functions such as "out" for inference on console and "in" for reading with console
+               System --- this is built  сlass in java.he give access to system functions such as "out" for inference on console and "in" for reading with console
                System.in --- he allow program get data which user enters through the console
 
 
@@ -221,8 +221,11 @@ class Main {
 
 
            //Lessons №3 conditional constructions(if, if else, else, switch, case)
+           // Урок №3 Умовні Конструктори(if --- якщо, if else --- якщо інакше, else --- інакше , switch --- перемикач, case --- справа, коробка)
 
                // conditional "if","else","if else" statement
+               // "if" this  is  conditional constructor in Java he performs conditional branching he checks the conditio if she is a true then it is done a specific block of code
+              // this element "==" used for to indicate equality (is it equal to it? if yes namly true then the then the condition is true and the compiler will read and execute certain code
                if (5 == 5 ){
                    System.out.print("it is tru" + "\n");
                }
@@ -234,6 +237,9 @@ class Main {
                // comparison operators(оператори порівняння): <, <=, >, >=, ==, !=.
                // && --- it is logical operator "and"
                // || --- it is logical operator "or"
+               // symbol "> and < " this is mathematical signs greater than and less than
+               // symbol ">= and =< " mathematical signs greater than equals and less than equals
+               // this element "!=" means opposite of the element "=="
 
                if (user == 50 && sym == '$') {
                    System.out.print("number is 50: " + user + sym + "\n");
@@ -242,6 +248,8 @@ class Main {
                    if(!isHappy){
                        System.out.print("don't happy!\n");
                    }
+                   // else if --- the same as and element "if" but can write more else if than element "if" he write only once
+                   // else --- this element written when the condition false then the else code block is executed
                } else if (user > 50) {
                    System.out.print("the number is greater(>) than 50\n");
                } else if (user < 50) {
@@ -258,9 +266,12 @@ class Main {
                System.out.print("write number(user1): ");
                int user1 = scan.nextInt();
 
+               //  switch --- checks only one change and can include many conditions
+               // element "case" this as a condition for example  if this element then execute this code
                switch (user1) {
                    case 5:
                        System.out.print("Number is " + user1);
+                       // break --- stops the code on a certain condition
                        break;
                    case 10:
                        System.out.print("number is " + user1);
@@ -268,6 +279,7 @@ class Main {
                    case 15:
                        System.out.print("number is " + user1);
                        break;
+                       // it's like "else" at the end
                    default:
                        System.out.print("write correct number, because number undefined");
                }
