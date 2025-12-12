@@ -5,6 +5,8 @@
 
 package Lesson1;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Main_2 {
@@ -12,12 +14,13 @@ public class Main_2 {
     public static void main(String[] args) {
 
         // Lesson #4 loops and operators in them (For, While, Do While)
-        // Урок №4 Цикли та оператори в них(...)
+        // Урок №4 Цикли та оператори в них(for --- для, while --- поки, do while --- робити поки)
         System.out.println("Lesson №4\n");
 
 
 
         // For Loop
+        // for --- "for" necessary for   block code replay a certain number of times or enumerating elements of collections, arrays
 
         for (int i = 0; i < 10; i++) {
             System.out.print("Element is(For) " + i + "\n");
@@ -30,6 +33,7 @@ public class Main_2 {
 
 
         // While Loop
+        // While --- the same as "if" but replay block code till, until the specified logical condition is true checking it before each execution of the loop body;
 
         int i_2 = 0;
         while (i_2 < 15) {
@@ -44,6 +48,7 @@ public class Main_2 {
 
 
         // Do/While Loop
+        // do while --- this element is loop performs at least once even if the condition is not true
 
         int i_3 = 0;
         do {
@@ -62,10 +67,12 @@ public class Main_2 {
 
             if (a == 11 ){
                 break;
+                // break --- stops code fully
             }
 
             if(a % 2 == 0){
                 continue;
+                // continue(продовжувати) --- to skip a specific block of code
             }
 
             System.out.print(a + "\n");
@@ -177,6 +184,60 @@ public class Main_2 {
           //.
         //..
 
+
+        System.out.println("============================================================================\n");
+
+
+
+
+        // Lesson №6 Collections in Java(Collections Framework)
+
+           System.out.println("Lesson №6\n");
+
+           // Collection  ArrayList
+           ArrayList<Short> anton = new ArrayList<>();
+           anton.add((short)56);
+           short anton_1 = 45;
+           anton.add(anton_1);
+           anton.add(1, (short)13);
+           anton.add(2, (short)24);
+           anton.remove(2);
+           anton.isEmpty();
+           anton.set(0, (short)90);
+         //anton.clear();
+
+//           Short[] qwerty =  (Short[])anton.toArray();
+
+
+           // 1 version traversing the arrays
+           for(int i = 0; i < anton.size(); i++){
+               System.out.println(anton.get(i));
+           }
+
+          System.out.print("\n");
+
+           // 2 version traversing the arrays
+           for(short arr : anton){
+               System.out.println(arr);
+           }
+           //.
+
+
+          // Collection LinkedList
+            LinkedList<Float> linkedList = new LinkedList<>();
+            linkedList.add(5.5f);
+            linkedList.add(15.5434f);
+            linkedList.add(8.1234f);
+
+            linkedList.getFirst();
+            linkedList.getLast();
+         // linkedList.removeFirst();
+
+            for(float vbn : linkedList){
+                System.out.println(vbn);
+            }
+          //.
+        //..
 
 
     }
