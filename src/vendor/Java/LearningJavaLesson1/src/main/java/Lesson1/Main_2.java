@@ -207,6 +207,8 @@ public class Main_2 {
          //anton.clear();
 
 //           Short[] qwerty =  (Short[])anton.toArray();
+           Short[] qwerty = anton.toArray(new Short[0]);
+           System.out.println("Колекція перетворена в масив.Значення 0 індекса:  " + qwerty[0]);
 
 
            // 1 version traversing the arrays
@@ -228,10 +230,16 @@ public class Main_2 {
             linkedList.add(5.5f);
             linkedList.add(15.5434f);
             linkedList.add(8.1234f);
+            linkedList.add(3.45084f);
 
-            linkedList.getFirst();
-            linkedList.getLast();
-         // linkedList.removeFirst();
+
+            System.out.println("значення першого(нульвого) індексу: " + linkedList.getFirst());
+            System.out.println("значення 1 індекса: " + linkedList.get(1));
+            System.out.println("значення 2 індекса: " + linkedList.get(2));
+            System.out.println("значення посліднього(3) індексу: " + linkedList.getLast());
+
+            linkedList.removeFirst();
+            linkedList.removeLast();
 
             for(float vbn : linkedList){
                 System.out.println(vbn);

@@ -5,7 +5,7 @@
 
 /*
 
-package --- using package for avoid conflicts names and for good write codes.Package there are2 types: built in(Java API) and using package(created by hand)
+package --- using package for avoid conflicts names and for good write codes.Package there are 2 types: built in(Java API) and using package(created by hand)
 
 */
 
@@ -20,7 +20,7 @@ package Lesson1;
 import --- using for providing access to classes,interfaces which are located different package(libraries)
 java.util --- this is package(libraries)
 .Scanner --- this is  class  package java.util
-on  this code connecting package  java.util and class scanner
+on  this code connecting package(libraries)  java.util and class scanner
  */
 
 import java.util.Scanner;
@@ -71,7 +71,8 @@ class   Main {
                * short(короткий) --- diapason number form -32,768 to 32,767
                * long(довгий) --- diapason number from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
 
-            2)float --- плавати.Floating point number, for example -2.5, -1.5, 10.5, 4.55... but save fractional number can be diapasone after comma from 6 to 7 numbers
+                2)float --- плавати.Floating point number, for example -2.5, -1.5, 10.5, 4.55... but save fractional number can be diapasone after comma from 6 to 7 numbers
+                  * double -- Stores fractional numbers. Sufficient for storing 15 to 16 decimal digits
             3)char(Character) --- характер. this  element save only one symbol.
             4)boolean(логічний) --- true or false
             5)str(String) --- строка,текстовий
@@ -132,7 +133,7 @@ class   Main {
                Scanner  --- this is class which reading data from source(files,console,input user,cod) or is used for get data  user.
                scan --- this is vareible.
                new --- this is keyword which create new object
-               System --- this is built  сlass in java.he give access to system functions such as "out" for inference on console and "in" for reading with console
+               System --- this is built  сlass in java. he give access to system functions such as "out" for inference on console and "in" for reading with console
                System.in --- he allow program get data which user enters through the console
 
 
@@ -279,7 +280,7 @@ class   Main {
                    case 15:
                        System.out.print("number is " + user1);
                        break;
-                       // it's like "else" at the end
+                       //default ---  it's like "else" at the end
                    default:
                        System.out.print("write correct number, because number undefined");
                }
