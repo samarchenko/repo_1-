@@ -117,6 +117,8 @@ public class Main_2 {
             short[] array = {5, 6, 3, 7, 2, 0};
             System.out.print("Довжина масиву: " + array.length + "\n");
 
+
+            // traversal of an array
             for (int g = 0; g < array.length; g++){
                 System.out.println(array[g] + "\n");
             }
