@@ -37,22 +37,50 @@ h3 {
     
 }
 
-/* .dib-1 p --- this selector is grouping elements  */
-.div-1 p {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-}
 
-/* can write 2 class and more, but definitely together writed   */
-.test-1.test-2{
-    background-color: yellow;
-}
+/* grouping of selectors practik: */
+  /* .dib-1 p --- this selector is grouping elements  */
+  .div-1 p {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
 
-/* how can write the same style for different elements(namely through coma)  */
-.p-1, .p-2, .p-3 {
-    color: blue;
-}
+  /* can write 2 class and more, but definitely together writed   */
+  .test-1.test-2{
+      background-color: yellow;
+    }
+
+  /* how can write the same style for different elements(namely through coma)  */
+  .p-1, .p-2, .p-3 {
+      color: blue;
+  }
+
+  /* > --- this element called child combinator used for choice elements which  direct descendants of another element namely can to apply
+  style only to them */
+  .parent-1 > p {
+      color: yellow; 
+    } 
+
+  /* selector (+) chooses of the neighboring element which chooses firest elemetn which one is closest to him */
+  .perent-2 + p{
+      color: green;
+    }
+
+  /* (~) ---  such samo as selector (+), but styles are applied to all elments tham going after specified element  */
+  .perent-3 ~ p {
+      color:blueviolet;
+  }
+
+  /* [] ---  selector attribute.  */
+  p[id="test-p"] {
+      color: pink;
+    }
+  p[class="test-p"] {
+      color: orange;
+    }
+/* . */
+
 
 
 
