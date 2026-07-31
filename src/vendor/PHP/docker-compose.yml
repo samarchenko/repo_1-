@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  # Nginx сервер
+  nginx:
+    image: nginx:alpine
+    container_name: nginx_PHP
+    ports:
+      - "8888:80"
+    volumes:
+      - ./:/var/www/html
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+  # PHP-FPM
+  php:
+    image: php:8.2-fpm-alpine
+    container_name: php-PHP
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
