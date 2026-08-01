@@ -7,6 +7,8 @@
 // echo - it's  displays what you write in (" ") or (' ')
 echo "Hello world! <br>";
 
+echo "<hr>". strtoupper("Lesson 1. variable and type data")."<br><br>";
+
 // Lesson 1. variable and type data
 
 // (\") - for wha? because compiler thik about it's closing paw(") and you need write \ so that he realise this as comment in code
@@ -45,7 +47,9 @@ const My_age = 100;
 echo My_age."<br><br>";
 //.
 
-// lesson 2 mathematical operations and  built-in fductions
+echo "<hr>". strtoupper("Lesson 2 mathematical operations and  built-in functions"). "<br><br>";
+
+// Lesson 2 mathematical operations and  built-in functions
 
 $x = 10;
 $y = 20;
@@ -90,7 +94,9 @@ echo "max nubmer: ". max(1, 2, 108, 32, 68, 78,)."<br>";
 echo "min number: ". min(0, 2, 56, 78, 102, 54, -1, 0, -2, 9, 0.99, -3, -10)."<br><br>";
 //.
 
-// Lesson 2. line operations  in php
+echo "<hr>". strtoupper("Lesson 3. line operations  in php")."<br><br>";
+
+// Lesson 3. line operations  in php
 
 // it's first option how you can write
 $text = "hello";
@@ -115,8 +121,53 @@ echo strtoupper("qgegnrke")."<br>";
 //strtolower - vice versa. make just normal size letter
 echo strtolower("uerreEWUIHFefwifhwFUE")."<br>";
 
-//md5 - this function make hidden password
+//md5 - this function make hidden text,password.
 echo md5("3123908wwqeiirew");
+//.
+
+echo "<hr>". strtoupper("Lesson 4. conditional constructions if,if-else,else.logical operators")."<br><br>";
+
+// Lesson 4. conditional constructions if,if-else,else.logical operators
+
+//if - it's conditional operator for example if condition is true he performs block code.
+// ==  -  check is equal to each other
+// > - symbol check or more.
+// < - the less than symbol
+// >= - is more equal to
+// <= - less is equal to
+// != -checking if not equal
+$a = "hello1";
+$b = strlen($a);
+if($b == 5){
+    echo "lenght: $b"."<br><br><br>";
+} else if($a == "hello1"){
+    echo " value: $a". "<br><br><br>";
+} else {
+    echo "error"."<br><br><br>";
+}
+
+/* else if - the same as (if). but it as extra to (if), always in the middle between (if) and (else).
+and is performed after (if) if (if) will be not correct(false) and if (if) not correct then next checking  will be for (else).*/
+//else - will be performs if others (if, else if) will be false.
+
+$q = 6;
+$justSrs = "Hello!!";
+$hasDog = true;
+// || - or
+// && - and
+if($justSrs == "Hi" || $hasDog == true){
+    echo "yes";
+    if($q > 2) {}
+    echo " num is bigger than 2"."<br>";
+} else if($justSrs == "Hello"){
+    echo "string is hello"."<br>";
+} else if ($justSrs == "Hello!"){
+    echo "string is hello!"."<br>";
+} else if($q  == 6){
+    echo "a is 6";
+}else {
+    echo "error";
+}
 //.
 
 
@@ -127,4 +178,3 @@ echo md5("3123908wwqeiirew");
 
 
 ?>
-
