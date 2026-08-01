@@ -170,6 +170,38 @@ if($justSrs == "Hi" || $hasDog == true){
 }
 //.
 
+echo "<hr>". strtoupper("Lesson 5 operator Switch-case.")."<br><br>";
+
+// Lesson 5 operator Switch-case.
+
+//switch - always checking  only on equality(==).in switch you can't check on symbol (<, >, <=,  >=, !=)
+//(default) -  the same as (else)
+$n = 40;
+switch ($n){
+    case 5:
+        echo "num is 5";
+        break;
+    case 15:
+        echo "num is 15";
+        break;
+    case 20:
+        echo "num is 20";
+        break;
+    case 30:
+        echo "num is 30";
+        break;
+    case 40:
+        echo "num is 40"."<br>";
+        break;
+    case 50:
+        echo "num is 50";
+        break;
+    default:
+        echo "error";
+        break;
+}
+//.
+
 
 
 
