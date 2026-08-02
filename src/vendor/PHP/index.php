@@ -202,6 +202,35 @@ switch ($n){
 }
 //.
 
+echo "<hr>". strtoupper("Lesson 6. Arrays datas.one-dimensional and multidimensional.")."<br><br>";
+
+// Lesson 6. Arrays datas.one-dimensional and multidimensional.
+
+// arrays - its special variable. which can keep a lot of value and datas in just one variable.
+// it's first option how you can create array.
+$array = array(5, 6, 2, 7, 9, 10, 546, 23,);
+$array[0] = 100;
+echo "index 3:  ". $array[3]."<br>";
+echo "chenge value in index 0 it's: ". $array[0]. "<br>";
+
+// it's second.
+$arr = [45, 0.48, "hello", true, [0, 6]];
+$arr[1] = "how are you";
+echo $arr[1]. "<br>";
+
+//Associative array - if compare with normal array. He differs you can create unique keys(index or id Something this) and you don't need  to consult by index.
+$list = ["age" => 50, "name" => "Alex", "hobby" => "Boks"];
+echo $list["name"]."<br>";
+
+//multidimensional array  - if say just. you create array in array  namely value it is array.
+$matrix = [
+    [3, 0.4, 10, 8],
+    ["hello", true, [9, "world", 0.5]]
+];
+echo $matrix[1][0]."<br>";  // hello
+echo $matrix[1][2][1]; // world
+//.
+
 
 
 
