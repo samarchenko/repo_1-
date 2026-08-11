@@ -231,6 +231,72 @@ echo $matrix[1][0]."<br>";  // hello
 echo $matrix[1][2][1]; // world
 //.
 
+echo "<hr>". strtoupper("Lesson 7. loops and loop operators.")."<br><br>";
+
+// Lesson 7. loops(for, while, do while) and loop operators.
+
+/* it's first option how can write loops. he working very easy and simply. In brackets we enter 1)variable, 2)condition(namely when loop finish),
+3)increase in number(namely  iteration) */
+for ($i = 0; $i < 10; $i++){
+   echo "(for)element: $i". "<br>";
+}
+
+echo "<br>";
+
+// it's second option.if compare with (for) and (while) are the same but in brackets we enter only condition.
+$i_2 = 0;
+while($i_2 < 10){
+    echo "(while) element: $i_2<br>";
+    $i_2++;
+}
+
+echo "<br>";
+
+// it's third option. its feature is that the loop is executed at least once
+$a = 100;
+do {
+    echo "(do while) element: $a<br>";
+    $a--;
+} while($a < 10);
+
+echo "<br><br>";
+
+// loop operators.
+// break - exit with loop
+for($el = 100; $el > 10; $el /= 2){
+    if ($el <= 15){
+        break;
+    }
+
+    // continue - misses iteration namely one circle passes into another.
+    if ($el % 2 == 0){
+        continue;
+    }
+
+    echo "el: $el<br>";
+}
+
+echo "<br><br><br>";
+
+$list = [4, 6, 2, 9, "hello", 5.6, true];
+for($q = 0; $q < count($list); $q++){
+    echo "$q: $list[$q]<br>";
+}
+
+echo "<br><br>";
+
+$list_2 = ["age" => 27, "name" => "Angriy", "hobby" => "video game"];
+foreach($list_2 as $key => $value){
+    echo "$key: $value<br>";
+}
+
+echo "<br><br>";
+
+$list_3 = [1, 5, 3, 8, 3, 7, 5];
+foreach($list_3 as $key => $value){
+    echo "$key: $value<br>";
+}
+//.
 
 
 
