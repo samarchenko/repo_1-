@@ -298,6 +298,43 @@ foreach($list_3 as $key => $value){
 }
 //.
 
+echo "<hr>". strtoupper("Lesson 8. function.")."<br><br>";
+
+// Lesson 8. function.
+
+// it's simple function and function it's block code  which perform some code(code inscribed in the middle function) for in order not to rewrite code.
+function fun($word){
+    echo "$word <br><br>";
+}
+
+fun("it's function");
+fun(10);
+$str = "hello world";
+fun($str);
+
+
+echo "<br><br>";
+function info($string){
+    echo "$string <br>";
+}
+function summary($x, $y){
+    $res = $x + $y;
+    info($res);
+    // returns the result of the function and immediately stops its execution.
+    return $res;
+
+}
+$res1 = summary(50, 10);
+$res2 = summary(20, 10);
+
+info($res1);
+info($res2);
+
+if ($res1 > $res2){
+    echo "max number: $res1 <br>";
+} else if ($res1 < $res2){
+    echo "max number $res2<br>";
+}
 
 
 
