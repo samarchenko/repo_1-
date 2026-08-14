@@ -336,6 +336,58 @@ if ($res1 > $res2){
     echo "max number $res2<br>";
 }
 
+echo "<br><br><br><br>";
+
+// practice
+$intArrayList_1 = [1, 6, 2, 4, 8];
+$intArrayList_2 = [5, 2, 3,];
+
+
+function countValueArrays($name_array){
+    $sum_value = 0;
+    for($i = 0; $i < count($name_array); $i++){
+        $sum_value = $sum_value + $name_array[$i];
+    }
+    echo "Сума значення масиву: $sum_value<br>";
+}
+
+countValueArrays($intArrayList_1);
+countValueArrays($intArrayList_2);
+
+echo "<br><br><br>";
+
+// the area is beautiful
+function sameFunction(){
+    // global - basic variables inside function are local and variables outside are public but "global" breaks this limitation.
+    global $x;
+    $x = 10;
+}
+$x = 0;
+sameFunction();
+echo $x."<br>";
+
+function click(){
+    $count = 0;
+    $count++;
+    echo $count."<br>";
+}
+
+click();
+click();
+click();
+
+echo "<br><br>";
+
+function click2(){
+    // static - 
+    static $count = 0;
+    $count++;
+    echo $count."<br>";
+}
+
+click2();
+click2();
+click2();
 
 
 
