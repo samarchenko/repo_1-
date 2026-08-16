@@ -379,7 +379,7 @@ click();
 echo "<br><br>";
 
 function click2(){
-    // static - 
+    // static -
     static $count = 0;
     $count++;
     echo $count."<br>";
@@ -388,6 +388,10 @@ function click2(){
 click2();
 click2();
 click2();
+//.
+
+echo "<hr>". strtoupper("Lesson 9. dynamic connect files.")."<br><br>";
+
 
 
 
