@@ -5,7 +5,6 @@
 ?>
 
 <div class="container">
-
 <h1>About us</h1>
 
 <form action="check_post.php" method="post">
@@ -15,7 +14,6 @@
     <textarea class="form-control" placeholder="Enter massage" name="message"></textarea><br>
     <input type="submit" value="Send" class="btn btn-success"><br>
 </form>
-
 </div>
 
 <?php

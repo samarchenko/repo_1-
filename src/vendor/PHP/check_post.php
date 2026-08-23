@@ -1,4 +1,5 @@
 <?php
+//
 ob_start();
 // print_r --- usually used that fast checks which data save in arrays. almost the same "echo" a like print
 //print_r($_POST);
@@ -23,7 +24,10 @@ if(trim($FirstLastName) == ""){
         echo "<p> $key: $value</p>";
     }
 
+    //
     ob_end_clean();
+
+    // header - 
     header('Location: about.php');
     exit;
 }
