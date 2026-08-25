@@ -9,6 +9,13 @@
         echo $title;
         ?>
     </title>
+    <style>
+        body {
+            background: #333;
+            color: white;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 <header>

@@ -27,7 +27,7 @@ if(trim($FirstLastName) == ""){
     //
     ob_end_clean();
 
-    // header - 
+    // header -
     header('Location: about.php');
     exit;
 }
