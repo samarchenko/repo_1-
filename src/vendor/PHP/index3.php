@@ -83,7 +83,7 @@ $arr_just_name = explode(",", $just_name);
 print_r($arr_just_name);
 echo "<br><br>";
 
-// implode - unites value array in one string 
+// implode - unites value array in one string
 echo implode(" | ", $arr_just_name );
 echo "<br><br>";
 
