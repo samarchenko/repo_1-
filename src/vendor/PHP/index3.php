@@ -87,6 +87,46 @@ echo "<br><br>";
 echo implode(" | ", $arr_just_name );
 echo "<br><br>";
 
+// lesson 15.working with files from helping  php
+
+/*
+
+r — тільки для читання. Вказівник ставиться на початок файлу.w — тільки для запису.
+Повністю очищає файл (або створює новий, якщо його немає). Вказівник — на початку.a — тільки для дописування (append).
+ Дані додаються в кінець файлу. Файл створюється, якщо не існує.r+ / w+ / a+ — комбіновані режими для читання та запису
+
+*/
+
+//fopen - this function help you with create,open new file and write something in side but only use code. w - it's type file means what what you can do with file w(write only)
+$file = 'text.txt';
+$file_open_write = fopen($file, 'w');
+
+// fwrite - help you write in side file
+fwrite($file_open_write, "Hello World! \nSame new text! \nhi");
+
+// fclose - this function close file which you create.
+fclose($file_open_write);
+
+
+
+$file_open_read = fopen($file, 'r');
+
+// fread - you need for only read file in brackets you first write which file you want read the second size . filesize() - function help you know about which  size file
+$container = fread($file_open_read, filesize($file));
+
+fclose($file_open_read);
+
+echo "<pre>".$container."</pre><br>";
+
+//file_put_contents() -
+// file_get_contents() -
+//file_exists() -
+//rename() -
+//unlink() -
+//__FILE__  -
+//fileperms() - 
+
+
 
 
 ?>
