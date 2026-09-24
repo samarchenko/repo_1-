@@ -20,6 +20,17 @@ echo time()."<br><br>";
 //strtotime - you can add or subtract hour,days, minutes,month.
 echo date("d-M-Y  H:i:s", strtotime("+1 hour"))."<br>";
 
+// Learning php lesson 17. send email form website 
+$massage = 'Text message';
+$to = "anton@gmail.com";
+$from = "samarchenko@gmail.com";
+$subject = "Subject text";
+
+$subject = "=?utf-8?B?".base64_encode($subject)."?=";
+$headers = "From: $from\r\nReply-to: $from\r\nContent-Type: text/plain; charset=utf-8\r\n";
+
+mail($to, $subject, $massage, $headers);
+
 ?>
 
 <?php
