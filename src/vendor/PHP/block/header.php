@@ -1,3 +1,16 @@
+<?php
+
+if(isset($_GET[":"])) {
+    $link = explode(":",$_SERVER["REQUEST_URI"]);
+    $redirect = "http://" . $_SERVER["HTTP_HOST"].$link[0];
+
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: '. $redirect);
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,5 +32,5 @@
 </head>
 <body>
 <header>
-    <a href="index2.php">Home</a> | <a href="about.php">About</a> | <a href="contacts.php">Contacts</a>
+    <a href="index2.php">Home</a> | <a href="about.php">About</a> | <a href="contacts.php">Contacts</a> | <a href="contacts2.php">Contacts2</a>
 </header>
